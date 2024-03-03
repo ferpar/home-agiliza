@@ -9,15 +9,15 @@ const description = getString("DESCRIPTION");
 export default function Hero() {
     return (
       <section className={styles["hero"]}>
-        {/* <div className={styles["background"]}>
-          <img src="/images/coin.webp" alt="hero" className={styles["hero-img"]} />
-        </div> */}
         <div className={styles["overlay"]} />
+        <div className={styles["background"]}>
+          <img src="/images/Cotizaciones.png" alt="hero" className={styles["hero-img"]} />
+        </div>
         <div className={`${styles["content"]} max-width-wrapper`}>
-          <h3>{title}
+          <h1>{title}
           <br/>
           <span className={styles["subtitle"]}>{subtitle}</span>
-          </h3>
+          </h1>
           <p>{welcome}</p>
           <br/>
           <p>{description}</p>

@@ -16,9 +16,9 @@ export default function Home() {
     <main className={styles.main}>
       <Hero />
       <About />
-      <Highlight />
-      <Triptic />
-      <Team />
+      {/* <Highlight /> */}
+      {/* <Triptic /> */}
+      {/* <Team /> */}
     </main>
   );
 }
