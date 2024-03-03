@@ -32,7 +32,7 @@
 }
 
 .overlay {
-  background-color: hsl(53deg 40% 36% / 0.765);
+  background: linear-gradient(-43deg, hsl(225.31deg 54% 14%), hsl(225.38deg 45% 40%));
   position: absolute;
   top: 0;
   right: 0;

@@ -1,17 +1,15 @@
 import "./globals.css";
-import { Montserrat, Montserrat_Subrayada, PT_Serif } from "next/font/google";
+import { Montserrat, PT_Serif, Saira, Jura, Yaldevi, Ojuju } from "next/font/google";
 import NavProvider from "@/components/NavContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { getString } from '../helpers/i18n'
 
-const montserrat = Montserrat({
+const montserrat = Saira({
   subsets: ["latin"],
   variable: "--font-montserrat",
 });
-const ptSerif = PT_Serif({
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
+const ptSerif = Jura({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-pt-serif",
