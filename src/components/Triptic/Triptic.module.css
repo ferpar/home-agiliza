@@ -1,0 +1,43 @@
+.triptic {
+  background-color: black;
+  color: white;
+  padding: 60px 20px;
+}
+
+.triptic article {
+  padding: 1rem 0;
+  text-align: left;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+}
+
+.triptic div {
+  padding: 1rem 0;
+}
+
+.img-wrapper {
+  padding: 1rem 0 2rem;
+}
+
+.triptic img {
+  max-width: 160px;
+  border-radius: 5px;
+}
+
+.triptic article:last-child {
+  border-bottom: none;
+}
+
+@media (min-width: 1280px) {
+  .triptic article {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  
+  .article-heading {
+    /* to align the text with the image */
+    margin-top: -9px;
+  }
+}

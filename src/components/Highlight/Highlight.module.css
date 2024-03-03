@@ -1,0 +1,25 @@
+
+.highlight {
+    padding: 60px 20px;
+    background-color: hsl(53 40% 36% / 1);
+    color: white;
+    text-align: left;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 730px;
+    width: fit-content;
+}
+
+.wrapper h3 {
+    text-align: center;
+}
+
+.wrapper * {
+    padding: 1rem 0;
+}
+
+.wrapper p:last-child{
+    padding-bottom: 0;
+}

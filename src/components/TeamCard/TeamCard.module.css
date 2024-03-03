@@ -1,0 +1,55 @@
+.card {
+    position: relative;
+    border-radius: 20px;
+    max-width: 400px;
+    flex: 1 1  300px;
+    background-color: hsl(53deg 40% 26% / 0.765);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: calc(30/16 * 1rem);
+}
+
+.card-info > hr {
+    margin: calc(6/16 * 1rem) 0 calc(16/16 * 1rem);
+}
+
+.card-bio {
+    background-color: hsl(53deg 40% 6% / 0.85);
+    z-index: 2;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.see-more {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.card-button {
+    width: 100%;
+    color: white;
+    padding: 1rem;
+    background-color: hsl(53deg 30% 10% / 1);
+    z-index: 2;
+    opacity: 1;
+    pointer-events: none;
+    border: none;
+}

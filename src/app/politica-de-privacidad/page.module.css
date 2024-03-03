@@ -1,0 +1,56 @@
+.main {
+    padding-top: 6rem;
+    isolation: isolate;
+    position: relative;
+    font-size: var(--font-size-m);
+}
+
+.main h1 {
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.main h1, .main h2, .main h3 {
+    font-weight: 400;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 calc(32/16 * 1rem);
+}
+
+.wrapper p {
+    padding-bottom: 1rem;
+}
+
+.wrapper ol {
+    list-style-type: none;
+}
+
+.wrapper ul {
+    margin-left: 1.5rem;
+}
+
+.wrapper ol li {
+    font-size: var(--font-size-xl);
+    padding-bottom: 3rem;
+}
+
+.wrapper ul li {
+    font-size: var(--font-size-m);
+    padding-bottom: 1rem;
+}
+
+.wrapper h2 {
+    padding-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+    .main h1 {
+        text-align: left;
+    }
+    .wrapper ol {
+       list-style-type: number; 
+    }
+}

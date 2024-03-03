@@ -1,0 +1,9 @@
+.main {
+    isolation: isolate;
+    position: relative;
+    font-size: var(--font-size-m);
+}
+
+.main h1, .main h2, .main h3 {
+    font-weight: 400;
+}
