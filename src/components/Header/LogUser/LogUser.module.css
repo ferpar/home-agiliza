@@ -1,0 +1,17 @@
+.wrapper {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    display: flex;
+    font-size: var(--font-size-l);
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    gap: 2rem;
+    min-width: 200px;
+  }
+}

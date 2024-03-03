@@ -14,8 +14,7 @@ export default function Hero() {
           <img src="/images/Cotizaciones.png" alt="hero" className={styles["hero-img"]} />
         </div>
         <div className={`${styles["content"]} max-width-wrapper`}>
-          <h1>{title}
-          <br/>
+          <h1>
           <span className={styles["subtitle"]}>{subtitle}</span>
           </h1>
           <p>{welcome}</p>

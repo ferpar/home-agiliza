@@ -121,6 +121,6 @@ h3 {
 }
 
 .max-width-wrapper {
-    max-width: 770px;
+    max-width: min(1170px, 70%) ;
     width: fit-content;
 }

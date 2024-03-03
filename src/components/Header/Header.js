@@ -6,6 +6,7 @@ import headerLinks from "./headerLinks";
 import TopNav from "./TopNav";
 import Hamburger from "../Hamburger";
 import SideNav from "./SideNav";
+import LogUser from "./LogUser/LogUser";
 
 function Header({ path }) {
   const [scrolled, setScrolled] = React.useState(null);
@@ -55,16 +56,18 @@ function Header({ path }) {
           `${externalPage ? styles["external-page"] : ""} `
         }
       >
-        <a href="/">
-          <img
+        <a className={styles["logo-wrapper"]} href="/">
+          {/* <img
             src="/images/logo.webp"
             alt="CLH"
             className={`${styles["logo"]} ${
               scrolled && !isOpen && styles["logo-scrolled"]
             }`}
-          />
+          /> */}
+          <h3>Agiliza Seller</h3>
         </a>
         <TopNav actualPath={actualPath} handlePathChange={handlePathChange} />
+        <LogUser />
         <Hamburger
           darkTheme={darkTheme && !scrolled}
           hide={true}

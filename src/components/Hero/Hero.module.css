@@ -65,10 +65,16 @@
 
 @media (min-width: 1280px) {
   .content {
-    margin-left: 20%;
+    margin-left: 10%;
   }
   .background {
     bottom: min(20%, 250px);
     width: min(1100px, 70%);
+  }
+
+  .hero .subtitle {
+    margin-bottom: 2rem;
+    font-size: var(--font-size-xxxl);
+    font-weight: 400;
   }
 }
