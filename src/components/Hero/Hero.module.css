@@ -90,21 +90,18 @@
 
 @media (min-width: 1280px) {
   .hero-main {
-    flex-direction: row;
+    gap: 8rem;
   }
   .content {
     margin-left: 5%;
     flex: 5;
   }
   .background {
-    position: absolute;
-    top: 40%;
-    right: 5%;
+    display: revert;
     flex: 4;
     align-self: flex-end;
-  }
-  .background img {
-    max-height: 45vh;
+    margin-right: 7rem;
+    max-width: min(1570px, 75%);
   }
 
   .hero .subtitle {
