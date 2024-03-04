@@ -9,11 +9,9 @@ export default function About() {
     <section className={styles["about"]}>
       <div className={styles["wrapper"]}>
         <div className={styles["text"]}>
-          {/* <h3>{getString("TITLE")}</h3>
-          <p>{getString("ABOUT")}</p> */}
           <p>
             <strong>Agiliza Seller</strong> es una herramienta específica para
-            vendedores de amazon, que permite:
+            vendedores de amazon
           </p>
           <br/>
         </div>
