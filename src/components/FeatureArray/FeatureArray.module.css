@@ -8,8 +8,6 @@
 }
 
 .featureCard {
-  flex-grow: 1;
-  flex-shrink: 0;
   min-width: 200px;
   max-width: 250px;
   gap: 1rem;
@@ -42,5 +40,8 @@
 @media (min-width: 1880px) {
   .wrapper {
     flex: 1;
+  }
+  .featureCard {
+    max-width: 300px;
   }
 }

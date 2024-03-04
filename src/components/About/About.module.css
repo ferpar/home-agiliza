@@ -11,13 +11,13 @@
   font-size: 3rem;
 }
 
-.text p {
+.mainText {
   font-family: var(--font-montserrat), sans-serif;
   font-size: var(--font-size-xl);
 }
 
 .wrapper {
-  max-width: 900px;
+  max-width: max(900px, 65%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,27 +25,24 @@
 }
 
 @media (min-width: 800px) {
-  .text p {
+  .mainText {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .text p {
+  .mainText {
     font-size: 4rem;
   }
 }
 
 @media (min-width: 1880px) {
   .wrapper {
-    flex-direction: row;
-    justify-content: space-between;
     padding: 5rem;
     max-width: 1880px;
   }
 
   .text {
-    align-self: flex-start;
     width: 50%;
     flex: 1;
   }
