@@ -27,7 +27,7 @@
 }
 
 .wrapper.dark-theme.scrolled {
-  background-color: hsl(53deg 40% 20% / 0.765);
+  background-color: hsl(247.42deg 34.43% 18.91% / 89.5%);
   transition: color 0s ease-in-out;
   color: white;
 }
@@ -62,7 +62,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: hsl(53deg 40% 20% / 0.765);
+  background-color: hsl(247.42deg 34.43% 18.91% / 89.5%);
   display: flex;
   gap: calc(24 / 16 * 1rem);
   font-size: 1.25rem;
@@ -128,7 +128,7 @@
 
 .scrolled {
   transition: all 0.3s ease-in-out;
-  background-color: hsl(53deg 40% 20% / 0.765);
+  background-color: hsl(247.42deg 34.43% 18.91% / 89.5%);
   color: white;
 }
 
