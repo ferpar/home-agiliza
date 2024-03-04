@@ -2,13 +2,10 @@ import styles from "./page.module.css";
 import { getString } from "../helpers/i18n";
 import Hero from "../components/Hero";
 import About from "../components/About";
-import Highlight from "@/components/Highlight";
-import Triptic from "@/components/Triptic/Triptic";
-import Team from "@/components/Team";
 
 export const metadata = {
-  title: "Inicio | Centro León Hebreo",
-  description: getString("DESCRIPTION"),
+  title: "Agiliza Seller",
+  description: "Vende más, trabaja menos",
 };
 
 export default function Home() {
@@ -16,9 +13,6 @@ export default function Home() {
     <main className={styles.main}>
       <Hero />
       <About />
-      {/* <Highlight /> */}
-      {/* <Triptic /> */}
-      {/* <Team /> */}
     </main>
   );
 }

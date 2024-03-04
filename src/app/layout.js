@@ -16,14 +16,14 @@ const ptSerif = Jura({
 });
 
 export const metadata = {
-  title: getString("TITLE"),
-  description: getString("DESCRIPTION"),
+  title: "Agiliza Seller",
+  description: "Vende más, trabaja menos",
   colorScheme: "light only",
   openGraph: {
-    title: getString("TITLE"),
-    description: getString("DESCRIPTION"),
-    url: 'https://centroleonhebreo.com/',
-    siteName: getString("TITLE"),
+    title: "Agiliza Seller",
+    description: "Vende más, trabaja menos",
+    url: 'https://agilizaSeller.com/',
+    siteName: "Agiliza Seller",
     locale: 'es_ES',
     type: 'website',
   },
