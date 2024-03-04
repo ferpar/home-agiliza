@@ -39,11 +39,6 @@ const features = [
     icon: CounterClockwiseClockIcon,
   },
   {
-    // this is a ghost cell for the grid to center last item
-    feature: "",
-    icon: null,
-  },
-  {
     feature:
       "Saber de un vistazo cuál es el proveedor que te está dando la mejor oferta, teniendo en cuenta todos los factores.",
     icon: RocketIcon,

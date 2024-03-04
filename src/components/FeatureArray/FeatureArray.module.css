@@ -1,12 +1,18 @@
 .array {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 0 1rem;
   gap: 1rem;
+  justify-content: center;
 }
 
 .featureCard {
+  flex-grow: 1;
+  flex-shrink: 0;
+  min-width: 200px;
+  max-width:250px;
+  gap: 1rem;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -15,7 +21,6 @@
   align-items: center;
   padding: 1rem;
   padding-top: 2rem;
-  gap: 1rem;
   background: hsl(225.31deg 65% 93%);
 }
 
