@@ -7,20 +7,26 @@ const welcome = getString("WELCOME");
 const description = getString("DESCRIPTION");
 
 export default function Hero() {
-    return (
-      <section className={styles["hero"]}>
-        <div className={styles["overlay"]} />
-        <div className={styles["background"]}>
-          <img src="/images/Cotizaciones.png" alt="hero" className={styles["hero-img"]} />
-        </div>
-        <div className={`${styles["content"]} max-width-wrapper`}>
+  return (
+    <section className={styles["hero"]}>
+      <div className={styles["overlay"]} />
+      <section className={styles["hero-main"]}>
+        <div className={`${styles["content"]} `}>
           <h1>
-          <span className={styles["subtitle"]}>{subtitle}</span>
+            <span className={styles["subtitle"]}>{subtitle}</span>
           </h1>
           <p>{welcome}</p>
-          <br/>
+          <br />
           <p>{description}</p>
         </div>
+        <div className={styles["background"]}>
+          <img
+            src="/images/Cotizaciones.png"
+            alt="hero"
+            className={styles["hero-img"]}
+          />
+        </div>
       </section>
-    )
+    </section>
+  );
 }
