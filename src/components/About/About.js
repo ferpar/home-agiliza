@@ -13,16 +13,11 @@ export default function About() {
             <strong>Agiliza Seller</strong> es una herramienta específica para
             vendedores de amazon
           </p>
-          <br/>
+          <br />
         </div>
-        <FeatureArray />
-        {/* <FadeIn>
-          <img
-            src="/images/mosaic.webp"
-            alt="bible"
-            className={styles["about-img"]}
-          />
-        </FadeIn> */}
+        <FadeIn>
+          <FeatureArray />
+        </FadeIn>
       </div>
     </section>
   );
