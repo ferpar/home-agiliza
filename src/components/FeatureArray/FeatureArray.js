@@ -8,6 +8,7 @@ import {
   RocketIcon,
 } from "@radix-ui/react-icons";
 import styles from "./FeatureArray.module.css";
+import FadeIn from "../FadeIn/FadeIn";
 
 const features = [
   {
@@ -53,10 +54,10 @@ export default function FeatureArray() {
           return !feature.feature ? (
             <div></div>
           ) : (
-            <div className={styles.featureCard} key={index}>
-              {feature.icon && <feature.icon height="50px" width="50px" />}
-              {feature.feature && <p>{feature.feature}</p>}
-            </div>
+              <div className={styles.featureCard} key={index}>
+                {feature.icon && <feature.icon height="50px" width="50px" />}
+                {feature.feature && <p>{feature.feature}</p>}
+              </div>
           );
         })}
       </div>

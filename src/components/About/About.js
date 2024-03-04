@@ -1,7 +1,4 @@
-import { getString } from "../../helpers/i18n";
 import styles from "./About.module.css";
-import Image from "next/image";
-import FadeIn from "../FadeIn";
 import FeatureArray from "../FeatureArray/FeatureArray";
 
 export default function About() {
@@ -15,9 +12,7 @@ export default function About() {
           </p>
           <br />
         </div>
-        <FadeIn>
           <FeatureArray />
-        </FadeIn>
       </div>
     </section>
   );
