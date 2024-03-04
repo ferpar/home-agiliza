@@ -11,17 +11,20 @@
   flex-grow: 1;
   flex-shrink: 0;
   min-width: 200px;
-  max-width:250px;
+  max-width: 250px;
   gap: 1rem;
-  border-radius: 6px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 1rem;
   padding-top: 2rem;
+}
+
+.fadeIn {
   background: hsl(225.31deg 65% 93%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
 }
 
 @media (min-width: 530px) {

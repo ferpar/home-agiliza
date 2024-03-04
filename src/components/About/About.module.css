@@ -1,8 +1,7 @@
 .about {
   background-color: white;
-  padding: 2rem;
+  padding: 5rem 2rem;
   color: black;
-  padding-bottom: 5rem;
   display: flex;
   justify-content: center;
   min-height: 60vh;
@@ -26,18 +25,12 @@
 }
 
 @media (min-width: 800px) {
-  .text {
-    margin-top: 4rem;
-  }
   .text p {
     font-size: 3rem;
   }
 }
 
 @media (min-width: 1280px) {
-  .text {
-    margin-top: 5rem;
-  }
   .text p {
     font-size: 4rem;
   }

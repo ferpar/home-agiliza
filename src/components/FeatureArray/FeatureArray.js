@@ -54,10 +54,12 @@ export default function FeatureArray() {
           return !feature.feature ? (
             <div></div>
           ) : (
+            <FadeIn extend={2} key={index} className={styles.fadeIn}>
               <div className={styles.featureCard} key={index}>
                 {feature.icon && <feature.icon height="50px" width="50px" />}
                 {feature.feature && <p>{feature.feature}</p>}
               </div>
+            </FadeIn>
           );
         })}
       </div>
