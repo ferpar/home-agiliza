@@ -17,7 +17,7 @@ export default function About() {
           <FeatureArray />
           <br/>
           <br/>
-          <p style={{fontSize: "2rem"}}>Y esto es sólo el principio... Vamos a introducir muchas más funcionalidades a medida que avance el producto.</p>
+          <p style={{fontSize: "2rem"}}>Y esto es sólo el principio... Vamos a introducir muchas más funcionalidades en colaboración con los mejores sellers.</p>
       </div>
     </section>
   );
