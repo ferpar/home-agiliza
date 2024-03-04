@@ -5,14 +5,14 @@ const headerLinks = [
     darkTheme: false,
   },
   {
-    name: "COURSES",
-    path: "/cursos",
+    name: "APP",
+    path: "/app",
     darkTheme: true,
   },
   {
-    name: "TEAM",
-    path: "/equipo",
-    darkTheme: false,
+    name: "PRICING",
+    path: "/pricing",
+    darkTheme: true,
   },
 ];
 
