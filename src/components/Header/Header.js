@@ -7,6 +7,7 @@ import TopNav from "./TopNav";
 import Hamburger from "../Hamburger";
 import SideNav from "./SideNav";
 import LogUser from "./LogUser/LogUser";
+import Image from "next/image";
 
 function Header({ path }) {
   const [scrolled, setScrolled] = React.useState(null);
@@ -57,13 +58,15 @@ function Header({ path }) {
         }
       >
         <a className={styles["logo-wrapper"]} href="/">
-          {/* <img
-            src="/images/logo.webp"
-            alt="CLH"
+          <Image
+            width={50}
+            height={50}
+            src="/images/logo.svg"
+            alt="Agiliza Seller logo"
             className={`${styles["logo"]} ${
               scrolled && !isOpen && styles["logo-scrolled"]
             }`}
-          /> */}
+          />
           <h3>Agiliza Seller</h3>
         </a>
         <TopNav actualPath={actualPath} handlePathChange={handlePathChange} />

@@ -141,8 +141,8 @@
 
 .logo {
   transition: all 0.3s ease-in-out;
-  width: 90px;
-  padding: 10px 0px 10px 20px;
+  width: 50px;
+  padding: 10px;
 }
 
 .logo-scrolled {
