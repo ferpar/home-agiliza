@@ -9,6 +9,7 @@
 }
 
 .hero-main {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -67,8 +68,17 @@
 
 @media (min-width: 800px) {
   .hero-main {
-    min-height: 60vh;
+    min-height: 65vh;
   }
+
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+  }
+
   .content {
     margin-left: 10%;
   }
@@ -81,18 +91,22 @@
 @media (min-width: 1280px) {
   .hero-main {
     flex-direction: row;
-    min-height: 50vh;
   }
   .content {
     margin-left: 5%;
     flex: 5;
   }
   .background {
-    position: relative;
+    position: absolute;
+    top: 40%;
+    right: 5%;
     flex: 4;
     align-self: flex-end;
-    right: 10%;
   }
+  .background img {
+    max-height: 45vh;
+  }
+
   .hero .subtitle {
     margin-bottom: 2rem;
     font-size: var(--font-size-xxxl);
