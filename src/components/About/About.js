@@ -10,14 +10,19 @@ export default function About() {
             <strong>Agiliza Seller</strong> es una herramienta específica para
             vendedores de amazon
           </p>
-          <br/>
-          <p style={{fontSize: "2rem"}}>Que permite las siguientes funcionalidades:</p>
+          <br />
+          <p style={{ fontSize: "2rem" }}>
+            Que permite las siguientes funcionalidades:
+          </p>
           <br />
         </div>
-          <FeatureArray />
-          <br/>
-          <br/>
-          <p style={{fontSize: "2rem"}}>Y esto es sólo el principio... Vamos a introducir muchas más funcionalidades en colaboración con los mejores sellers.</p>
+        <FeatureArray />
+        <br />
+        <br />
+        <p style={{ fontSize: "2rem" }}>
+          Y esto es sólo el principio... Vamos a introducir muchas más
+          funcionalidades en colaboración con los mejores sellers.
+        </p>
       </div>
     </section>
   );

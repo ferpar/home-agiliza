@@ -1,55 +1,54 @@
 .hamburger {
-    position: relative;
-    width: calc( 24/16 * 1rem);
-    height: calc( 24/16 * 1rem);
-    margin: 16px;
+  position: relative;
+  width: calc(24 / 16 * 1rem);
+  height: calc(24 / 16 * 1rem);
+  margin: 16px;
 }
 
 .line {
-    position: absolute;
-    width: 100%;
-    height: calc(3/16 * 1rem);
-    background-color: white;
-    transition: all 0.3s ease-in-out;    
+  position: absolute;
+  width: 100%;
+  height: calc(3 / 16 * 1rem);
+  background-color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .hamburger .line:nth-child(1) {
-    top: 0;
+  top: 0;
 }
 
 .hamburger .line:nth-child(2) {
-    top: 50%;
-    transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .hamburger .line:nth-child(3) {
-    bottom: 0;
+  bottom: 0;
 }
 
 .open .line:nth-child(1) {
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-    transition: all 0.3s ease-in-out;    
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all 0.3s ease-in-out;
 }
 
 .open .line:nth-child(2) {
-    opacity: 0;
-    transition: all 0.3s ease-in-out;    
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .open .line:nth-child(3) {
-    bottom: 50%;
-    transition: all 0.3s ease-in-out;    
-    transform: translateY(50%) rotate(-45deg);
+  bottom: 50%;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(50%) rotate(-45deg);
 }
 
-.hamburger.dark .line{
-    background-color: black;
+.hamburger.dark .line {
+  background-color: black;
 }
 
 @media (min-width: 800px) {
-    .hide {
-        display: none;
-    }
-    
+  .hide {
+    display: none;
+  }
 }

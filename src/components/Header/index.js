@@ -1,1 +1,1 @@
-export { default as default } from './WrappedHeader'
+export { default as default } from "./WrappedHeader";

@@ -15,7 +15,7 @@ export default function Hamburger({
       className={
         `${styles["hamburger"]} ` +
         `${isOpen ? styles["open"] : ""} ` +
-        `${(darkTheme && !isOpen) ? styles["dark"] : ""} ` +
+        `${darkTheme && !isOpen ? styles["dark"] : ""} ` +
         `${hide ? styles["hide"] : ""}`
       }
       onClick={() => setIsOpen(!isOpen)}

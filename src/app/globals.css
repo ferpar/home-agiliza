@@ -1,21 +1,22 @@
 :root {
   --header-height: 80px;
-  --font-size-xs: calc(14/16 * 1rem);
+  --font-size-xs: calc(14 / 16 * 1rem);
   --font-size-s: 1rem;
-  --font-size-m: calc(18/16 * 1rem);
-  --font-size-l: calc(22/16 * 1rem);
-  --font-size-xl: calc(32/16 * 1rem);
-  --font-size-xxl: calc(42/16 * 1rem);
-  --font-size-xxxl: calc(72/16 * 1rem);
+  --font-size-m: calc(18 / 16 * 1rem);
+  --font-size-l: calc(22 / 16 * 1rem);
+  --font-size-xl: calc(32 / 16 * 1rem);
+  --font-size-xxl: calc(42 / 16 * 1rem);
+  --font-size-xxxl: calc(72 / 16 * 1rem);
 
   /* Colors */
   --og-header-bg: rgb(193, 184, 110);
-
 }
 /*
   1. Use a more-intuitive box-sizing model.
 */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 /*
@@ -37,26 +38,40 @@ body {
 /*
   5. Improve media defaults
 */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 /*
   6. Remove built-in form typography styles
 */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 /*
   7. Avoid text overflows
 */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 /*
   8. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
@@ -71,7 +86,8 @@ a {
 /*
 extra 2. ensure 100% height on html and body
 */
-html, body {
+html,
+body {
   height: 100%;
 }
 /***** end reset *********/
@@ -85,7 +101,9 @@ body {
   flex-direction: column;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-montserrat), sans-serif;
 }
 
@@ -99,7 +117,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-xl);   
+  font-size: var(--font-size-xl);
 }
 
 h3 {
@@ -108,7 +126,6 @@ h3 {
 }
 
 @media (min-width: 1280px) {
-
   h3 {
     transition: font-size 0.2s ease-in-out;
     font-size: var(--font-size-xl);
@@ -122,6 +139,6 @@ h3 {
 
 .legal-terms-wrapper {
   margin: 0 auto;
-  max-width: min(1170px, 70%) ;
+  max-width: min(1170px, 70%);
   width: fit-content;
 }

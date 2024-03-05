@@ -1,9 +1,9 @@
-import stringsES from '../es.json'
+import stringsES from "../es.json";
 
 const strings = {
-    es: stringsES
-}
+  es: stringsES,
+};
 
-export function getString(id, lang = 'es'){
-    return strings[lang][id]
+export function getString(id, lang = "es") {
+  return strings[lang][id];
 }

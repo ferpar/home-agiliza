@@ -1,45 +1,45 @@
 .main {
-    padding-top: 6rem;
-    isolation: isolate;
-    position: relative;
-    font-size: var(--font-size-m);
+  padding-top: 6rem;
+  isolation: isolate;
+  position: relative;
+  font-size: var(--font-size-m);
 }
 
 .main h1 {
-    padding-bottom: 4rem;
-    text-align: center;
+  padding-bottom: 4rem;
+  text-align: center;
 }
 
 .main h1,
 .main h2,
 .main h3 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .wrapper {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 calc(48 / 16 * 1rem);
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 calc(48 / 16 * 1rem);
 }
 
 .wrapper ol {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .wrapper li {
-    font-size: var(--font-size-xl);
-    padding-bottom: 3rem;
+  font-size: var(--font-size-xl);
+  padding-bottom: 3rem;
 }
 
 .wrapper h2 {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 800px) {
-    .main h1 {
-        text-align: left;
-    }
-    .wrapper ol {
-        list-style-type: number;
-    }
+  .main h1 {
+    text-align: left;
+  }
+  .wrapper ol {
+    list-style-type: number;
+  }
 }

@@ -21,13 +21,13 @@ export default function Hero() {
           <p>{description}</p>
         </div>
         <div className={styles["background"]}>
-            <Image
-              src="/images/Cotizaciones.png"
-              alt="hero"
-              className={styles["hero-img"]}
-              width={936}
-              height={422}
-            />
+          <Image
+            src="/images/Cotizaciones.png"
+            alt="hero"
+            className={styles["hero-img"]}
+            width={936}
+            height={422}
+          />
         </div>
       </section>
     </section>

@@ -3,13 +3,18 @@ import styles from "./Header.module.css";
 import { getString } from "../../helpers/i18n";
 import headerLinks from "./headerLinks";
 
-export default function SideNav({ actualPath, handlePathChange, isOpen, onClick }) {
+export default function SideNav({
+  actualPath,
+  handlePathChange,
+  isOpen,
+  onClick,
+}) {
   return (
-    <nav className={
-      `${styles["side-nav"]} ` + 
-      `${isOpen ? styles["open-side-nav"] : ""}`
-    }
-        onClick={() => onClick()}
+    <nav
+      className={
+        `${styles["side-nav"]} ` + `${isOpen ? styles["open-side-nav"] : ""}`
+      }
+      onClick={() => onClick()}
     >
       <ul
         className={
