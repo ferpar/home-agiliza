@@ -7,13 +7,14 @@ import { getString } from "../../helpers/i18n";
 
 const footerLinks = [
   {
-    name: "LEGAL",
-    path: "/aviso-legal",
+    name: "TERMINOS",
+    path: "/terminos-condiciones",
   },
   {
     name: "PRIVACY",
     path: "/politica-de-privacidad",
   },
+
   // {
   //   name: "COOKIES",
   //   path: "/configuracion-de-cookies",
@@ -31,16 +32,9 @@ function Footer() {
     <footer className={styles["site-footer"]}>
       <div className={styles["footer-contact"]}>
         <h3>Contáctanos</h3>
-        <a href="mailto:centroleonhebreo@gmail.com">
-          centroleonhebreo@gmail.com
-        </a>
-        <div>
-          <span>Whatsapp </span>
-          <a href="tel:+34696982192">+34 696 982 192 </a>
-        </div>
+        <a href="mailto:hola@agilizaseller.com">hola@agilizaseller.com</a>
         <a
-          href="https://www.google.com/maps/place/Camino+de+las+Fuentezuelas,+n%C2%B01,+casa+7,+18190+Cenes+de+la+Vega,+Granada,+Spain
-"
+          href="https://www.google.com/maps/place/C.+de+Clara+del+Rey,+36,+Chamart%C3%ADn,+28002+Madrid"
           target="_blank"
         >
           {getString("ADDRESS")}

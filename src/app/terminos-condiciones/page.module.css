@@ -10,14 +10,16 @@
     text-align: center;
 }
 
-.main h1, .main h2, .main h3 {
+.main h1,
+.main h2,
+.main h3 {
     font-weight: 400;
 }
 
 .wrapper {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 calc(32/16 * 1rem);
+    padding: 0 calc(48 / 16 * 1rem);
 }
 
 .wrapper ol {
@@ -38,6 +40,6 @@
         text-align: left;
     }
     .wrapper ol {
-       list-style-type: number; 
+        list-style-type: number;
     }
 }
