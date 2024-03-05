@@ -8,7 +8,7 @@ export default function LogUser() {
   const [clicked, setClicked] = React.useState(false);
   return (
     <div className={styles.wrapper}>
-      <Link href="https://agilizaSeller.com">
+      <Link href="https://app.agilizaSeller.com">
         <Button
           style={{
             fontFamily: "var(--font-montserrat)",
