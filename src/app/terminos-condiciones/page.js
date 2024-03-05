@@ -2,12 +2,12 @@ import { getString } from "../../helpers/i18n";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Aviso Legal | Centro León Hebreo",
-  description: "Aviso Legal del Centro León Hebreo",
+  title: "Terminos y Condiciones | Agiliza Seller",
+  description: "Terminos y Condiciones de Agiliza Seller",
 };
 
 export default function Advice() {
-  const articleNums = Array.from({ length: 7 }, (_, i) => i + 1);
+  const articleNums = Array.from({ length: 12 }, (_, i) => i + 1);
   const articles = articleNums.map((num) => {
     return {
       title: getString(`LEGAL_HEADING_${num}`),
