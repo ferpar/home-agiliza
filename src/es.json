@@ -61,5 +61,11 @@
   "PRIVACY_P9": "Agiliza Seller adopta las medidas técnicas y organizativas necesarias para garantizar la seguridad y confidencialidad de los datos personales, evitando su alteración, pérdida, tratamiento o acceso no autorizado.",
   "PRIVACY_HEADING_10": "Modificaciones a la Política de Privacidad",
   "PRIVACY_P10": "Agiliza Seller se reserva el derecho de modificar esta Política de Privacidad en cualquier momento. Cualquier cambio será debidamente notificado a los usuarios a través del sitio web o por correo electronico.",
-  "ADDRESS": "Calle Clara del Rey 36, bajo, 28002 (Madrid) España"
+  "ADDRESS": "Calle Clara del Rey 36, bajo, 28002 (Madrid) España",
+  "VERIFICATION_ALREADY_VERIFIED": "Cuenta ya verificada",
+  "VERIFICACION_ALREADY_VERIFIED_DESCR": "Tu cuenta ya ha sido verificada. Puedes continuar utilizando la aplicación.",
+  "VERIFICATION_SUCCESS": "Verificación exitosa",
+  "VERIFICACION_SUCCESS_DESCR": "Tu cuenta ha sido verificada con éxito. Puedes continuar utilizando la aplicación.",
+  "VERIFICATION_NOT_FOUND": "Error de verificación",
+  "VERIFICACION_NOT_FOUND_DESCR": "Ha ocurrido un error al verificar tu cuenta. Por favor, ponte en contacto con soporte@agilizaseller.com"
 }
