@@ -16,7 +16,7 @@ export default function Advice() {
   });
 
   return (
-    <main className={styles["main"] + " " + "max-width-wrapper"}>
+    <main className={styles["main"] + " " + "legal-terms-wrapper"}>
       <h1>{getString("LEGAL_TITLE")}</h1>
       <div className={`${styles["wrapper"]}`}>
         <ol>

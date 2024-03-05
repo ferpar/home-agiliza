@@ -120,7 +120,8 @@ h3 {
   }
 }
 
-.max-width-wrapper {
-    max-width: min(1170px, 70%) ;
-    width: fit-content;
+.legal-terms-wrapper {
+  margin: 0 auto;
+  max-width: min(1170px, 70%) ;
+  width: fit-content;
 }
