@@ -53,15 +53,7 @@ export default function Pricing() {
   ];
 
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <main className={styles.main}>
       <div className={styles.pricing_header}>
         <span className={styles.label}>Anual</span>
         <span className={styles.switch_container}>
@@ -133,7 +125,9 @@ export default function Pricing() {
                 <li key={idx}>{feature}</li>
               ))}
             </ul>
-            <Button className={styles.button}>Empezar</Button>
+            <Button className={styles.button} size="5">
+              Empezar
+            </Button>
           </div>
         ))}
       </div>
