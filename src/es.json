@@ -67,5 +67,22 @@
   "VERIFICATION_SUCCESS": "Verificación exitosa",
   "VERIFICACION_SUCCESS_DESCR": "Tu cuenta ha sido verificada con éxito. Puedes continuar utilizando la aplicación.",
   "VERIFICATION_NOT_FOUND": "Error de verificación",
-  "VERIFICACION_NOT_FOUND_DESCR": "Ha ocurrido un error al verificar tu cuenta. Por favor, ponte en contacto con soporte@agilizaseller.com"
+  "VERIFICACION_NOT_FOUND_DESCR": "Ha ocurrido un error al verificar tu cuenta. Por favor, ponte en contacto con soporte@agilizaseller.com",
+  "PW_RESET_TITLE": "Restablecer contraseña",
+  "PW_RESET_NEW_PASSWORD": "Nueva contraseña",
+  "PW_RESET_CONFIRM_PASSWORD": "Confirmar contraseña",
+  "PW_RESET_SEND_BUTTON": "Enviar",
+  "PW_RESET_PASSWORDS_DONT_MATCH": "Las contraseñas no coinciden",
+  "PW_RESET_PASSWORD_INVALID": "La contraseña debe tener al menos 6 caracteres",
+  "PW_RESET_INVALID_TOKEN": "El token ha expirado, por favor solicita un nuevo enlace de restablecimiento de contraseña.",
+  "PW_RESET_UNKNOWN_ERROR": "No se ha podido restablecer la contraseña. Por favor, escribenos a hola@agilizaseller.com",
+  "PW_RESET_SUCCESS_MESSAGE": "Contraseña restablecida!",
+  "PW_RESET_REQ_TITLE": "Contraseña Olvidada?",
+  "PW_RESET_REQ_DESCR": "Introduce tu email y te enviaremos un enlace para restablecer tu contraseña",
+  "PW_RESET_REQ_EMAIL": "Email",
+  "PW_RESET_REQ_INVALID_EMAIL": "Por favor, introduce un email válido",
+  "PW_RESET_REQ_EMAIL_SENT": "Email enviado!, por favor revisa tu bandeja de entrada",
+  "PW_RESET_REQ_EMAIL_NOT_FOUND": "No se ha encontrado una cuenta con ese email",
+  "PW_RESET_REQ_SEND_BUTTON": "Enviar",
+  "PW_RESET_REQ_UNKNOWN_ERROR": "Ha ocurrido un error, por favor intenta de nuevo, o ponte en contacto con hola@agilizaseller.com"
 }
