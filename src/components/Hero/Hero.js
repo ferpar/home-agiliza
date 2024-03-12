@@ -22,11 +22,11 @@ export default function Hero() {
         </div>
         <div className={styles["background"]}>
           <Image
-            src="/images/Cotizaciones.png"
+            src="/images/Cotizaciones.gif"
             alt="hero"
             className={styles["hero-img"]}
-            width={936}
-            height={422}
+            width={1920}
+            height={969}
           />
         </div>
       </section>
