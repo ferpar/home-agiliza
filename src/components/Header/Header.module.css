@@ -143,6 +143,7 @@
   transition: all 0.3s ease-in-out;
   width: 50px;
   padding: 10px;
+  margin-bottom: 0.5rem;
 }
 
 .logo-scrolled {
