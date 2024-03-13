@@ -118,13 +118,19 @@ export default function Pricing() {
   };
 
   const handleOrder = (plan) => {
-    let cart = cbInstance.getCart();
-    let product = cbInstance.initializeProduct(plan.data_cb_item);
-    product.isItemsModel = true;
-    product.setPlanQuantity(1);
-    product.addCoupon(plan.discount.code);
-    cart.replaceProduct(product);
-    cart.proceedToCheckout();
+    try {
+      let cart = cbInstance.getCart();
+      let product = cbInstance.initializeProduct(plan.data_cb_item);
+      product.isItemsModel = true;
+      product.setPlanQuantity(1);
+      product.addCoupon(plan.discount.code);
+      cart.replaceProduct(product);
+      cart.proceedToCheckout();
+    } catch (e) {
+      window.alert(
+        "Ha ocurrido un error al procesar tu pedido. Por favor, inténtalo de nuevo más tarde o ponte en contacto con hola@agilizaseller.com",
+      );
+    }
   };
 
   return (
