@@ -25,7 +25,10 @@ export default function Pricing() {
   };
   const coupons = {
     lanzamiento: {
-      name: "Oferta de Lanzamiento (para toda la vida, contratando ahora)",
+      name: [
+        "Oferta de Lanzamiento",
+        "(para toda la vida de la suscripción, contratando ahora)",
+      ],
       coupons: {
         aut_mens: {
           code: "AGILIZA_LANZAMIENTO1",
@@ -156,7 +159,18 @@ export default function Pricing() {
           >
             <h1>{plan.name}</h1>
             {plan.discount.enabled && (
-              <div className={styles.discount}>{plan.discount.name}</div>
+              <div className={styles.discount}>
+                {plan.discount.name.map((line, idx) =>
+                  idx === 0 ? (
+                    <>
+                      <span key={idx}>{line}</span>
+                      <br />
+                    </>
+                  ) : (
+                    <p key={idx}>{line}</p>
+                  ),
+                )}
+              </div>
             )}
             <div
               className={styles.price_and_discounted + " " + styles.discount}
