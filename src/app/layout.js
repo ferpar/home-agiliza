@@ -35,7 +35,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${ptSerif.variable} ${montserrat.variable}`}>
-      <Script id="tawk" type="text/javascript">
+      <Script id="tawk" type="text/javascript" strategy="lazyOnload">
         {`      
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
