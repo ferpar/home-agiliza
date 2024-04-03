@@ -8,7 +8,7 @@ export default function LogUser() {
   const [clicked, setClicked] = React.useState(false);
   return (
     <div className={styles.wrapper}>
-      <Link href="https://app.agilizaSeller.com">
+      <Link href="https://app.agilizaseller.com/register">
         <Button
           style={{
             fontFamily: "var(--font-montserrat)",
@@ -17,10 +17,9 @@ export default function LogUser() {
           }}
           onClick={() => setClicked(true)}
         >
-          {clicked ? "Cargando..." : "Acceso a Beta!"}
+          {clicked ? "Cargando..." : "Probar la App Gratis!"}
         </Button>
       </Link>
     </div>
   );
-  2;
 }
