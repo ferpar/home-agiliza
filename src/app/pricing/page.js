@@ -15,7 +15,6 @@ function isValidUUID(uuid) {
 export default function Pricing() {
   const searchParams = useSearchParams();
   const uuid = searchParams.get("uuid");
-  console.log(uuid);
   const [monthly, setMonthly] = React.useState(true);
   const [cbInstance, setCbInstance] = React.useState(null);
   const features = {
