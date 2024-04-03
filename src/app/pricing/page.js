@@ -3,24 +3,31 @@ import React from "react";
 import styles from "./page.module.css";
 import { Button, Switch } from "@radix-ui/themes";
 import Script from "next/script";
+import { useSearchParams } from "next/navigation";
+import Link from "next/link";
+
+function isValidUUID(uuid) {
+  const regex =
+    /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89ABab][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$/;
+  return regex.test(uuid);
+}
 
 export default function Pricing() {
-  const [monthly, setMonthly] = React.useState(false);
+  const searchParams = useSearchParams();
+  const uuid = searchParams.get("uuid");
+  console.log(uuid);
+  const [monthly, setMonthly] = React.useState(true);
   const [cbInstance, setCbInstance] = React.useState(null);
   const features = {
-    autonomos: [
+    cotizaciones: [
       "Cálculo de margen y ROI para Autónomos con recargo de equivalencia",
+      "Cálculo de margen y ROI para Empresas",
       "Cálculo de tarifas de amazon exactas",
-      "3 Productos",
       "Cotizaciones ilimitadas",
-      "Conversion de divisa automática entre USD y EUR",
       "Cálculo de costes en funcion de cantidades",
       "Cálculo de costes en funcion de incoterms",
-    ],
-    empresas: [
-      "Cálculo de margen y ROI para Empresas",
       "Productos ilimitados",
-      "Conversion automática entre 20 divisas",
+      "Conversion de divisa automática entre USD y EUR",
     ],
   };
   const coupons = {
@@ -30,21 +37,9 @@ export default function Pricing() {
         "(para toda la vida de la suscripción, contratando ahora)",
       ],
       coupons: {
-        aut_mens: {
-          code: "AGILIZA_LANZAMIENTO1",
-          amount: 4,
-        },
-        aut_an: {
-          code: "AGILIZA_LANZAMIENTO2",
+        cot_mens: {
+          code: "AGILIZA_LANZAMIENTO",
           amount: 3,
-        },
-        emp_mens: {
-          code: "AGILIZA_LANZAMIENTO3",
-          amount: 9,
-        },
-        emp_an: {
-          code: "AGILIZA_LANZAMIENTO4",
-          amount: 7,
         },
       },
     },
@@ -53,64 +48,21 @@ export default function Pricing() {
   const plans = {
     monthly: [
       {
-        name: "Autonomo Mensual",
-        price: 19,
-        data_cb_item: "Autonomos-EUR-Monthly",
+        name: "Cotizaciones Mensual",
+        price: 12.7,
+        data_cb_item: "Cotizaciones-EUR-Monthly",
         discount: {
           enabled: Boolean(auto_coupon),
           name: auto_coupon.name,
-          code: auto_coupon.coupons.aut_mens.code,
-          amount: auto_coupon.coupons.aut_mens.amount,
-        },
-        highlight: false,
-        base_features: [],
-        features: features.autonomos,
-      },
-      {
-        name: "Empresa Mensual",
-        price: 45,
-        data_cb_item: "Empresas-EUR-Monthly",
-        discount: {
-          enabled: Boolean(auto_coupon),
-          name: auto_coupon.name,
-          code: auto_coupon.coupons.emp_mens.code,
-          amount: auto_coupon.coupons.emp_mens.amount,
+          code: auto_coupon.coupons.cot_mens.code,
+          amount: auto_coupon.coupons.cot_mens.amount,
         },
         highlight: true,
-        base_features: ["Todo lo que incluye el plan de Autónomos"],
-        features: features.empresas,
-      },
-    ],
-    annual: [
-      {
-        name: "Autonomo Anual",
-        price: 15,
-        data_cb_item: "Autonomos-EUR-Yearly",
-        discount: {
-          enabled: Boolean(auto_coupon),
-          name: auto_coupon.name,
-          code: auto_coupon.coupons.aut_an.code,
-          amount: auto_coupon.coupons.aut_an.amount,
-        },
-        highlight: false,
         base_features: [],
-        features: features.autonomos,
-      },
-      {
-        name: "Empresa Anual",
-        price: 36,
-        data_cb_item: "Empresas-EUR-Yearly",
-        discount: {
-          enabled: Boolean(auto_coupon),
-          name: auto_coupon.name,
-          code: auto_coupon.coupons.emp_an.code,
-          amount: auto_coupon.coupons.emp_an.amount,
-        },
-        highlight: true,
-        base_features: ["Todo lo que incluye el plan de Autónomos"],
-        features: features.empresas,
+        features: features.cotizaciones,
       },
     ],
+    annual: null,
   };
 
   const handleLoad = () => {
@@ -125,8 +77,11 @@ export default function Pricing() {
       product.setPlanQuantity(1);
       product.addCoupon(plan.discount.code);
       cart.replaceProduct(product);
+      const customer = { cf_agiliza_id: uuid };
+      cart.setCustomer(customer);
       cart.proceedToCheckout();
     } catch (e) {
+      console.error(e);
       window.alert(
         "Ha ocurrido un error al procesar tu pedido. Por favor, inténtalo de nuevo más tarde o ponte en contacto con hola@agilizaseller.com",
       );
@@ -141,17 +96,21 @@ export default function Pricing() {
         data-cb-site="agilizaseller-test"
       ></Script>
       <div className={styles.pricing_header}>
-        <span className={styles.label}>Anual</span>
-        <span className={styles.switch_container}>
-          <Switch
-            className={styles.switch}
-            onCheckedChange={() => {
-              setMonthly(!monthly);
-            }}
-            checked={monthly}
-          />
-        </span>
-        <span className={styles.label}>Mensual</span>
+        {plans.annual && (
+          <>
+            <span className={styles.label}>Anual</span>
+            <span className={styles.switch_container}>
+              <Switch
+                className={styles.switch}
+                onCheckedChange={() => {
+                  setMonthly(!monthly);
+                }}
+                checked={monthly}
+              />
+            </span>
+            <span className={styles.label}>Mensual</span>
+          </>
+        )}
       </div>
       <div className={styles.pricing_container}>
         {plans[monthly ? "monthly" : "annual"].map((plan) => (
@@ -168,10 +127,9 @@ export default function Pricing() {
               <div className={styles.discount}>
                 {plan.discount.name.map((line, idx) =>
                   idx === 0 ? (
-                    <>
+                    <div key={idx}>
                       <span key={idx}>{line}</span>
-                      <br />
-                    </>
+                    </div>
                   ) : (
                     <p key={idx}>{line}</p>
                   ),
@@ -182,7 +140,7 @@ export default function Pricing() {
               className={styles.price_and_discounted + " " + styles.discount}
             >
               {plan.discount.enabled && (
-                <span
+                <div
                   className={
                     styles.normal_price_when_discounted +
                     " " +
@@ -191,12 +149,12 @@ export default function Pricing() {
                 >
                   {plan.price}€
                   <span className={styles.perMonth}>/mes + IVA</span>
-                </span>
+                </div>
               )}
-              <span className={styles.price}>
+              <div className={styles.price}>
                 {plan.price - plan.discount.amount}€
                 <span className={styles.perMonth}>/mes + IVA</span>
-              </span>
+              </div>
             </div>
             <div className={styles.perMonth}>
               {monthly ? "(facturado mensualmente)" : "(facturado anualmente)"}
@@ -216,16 +174,23 @@ export default function Pricing() {
                 <li key={idx}>{feature}</li>
               ))}
             </ul>
-
-            <Button
-              className={styles.button}
-              size="5"
-              onClick={() => {
-                handleOrder(plan);
-              }}
-            >
-              Empezar
-            </Button>
+            {isValidUUID(uuid) ? (
+              <Button
+                className={styles.button}
+                size="5"
+                onClick={() => {
+                  handleOrder(plan);
+                }}
+              >
+                Contratar
+              </Button>
+            ) : (
+              <Link href="https://app.agilizaseller.com/register">
+                <Button className={styles.button} size="5">
+                  Empezar Prueba Gratuita (3 días)
+                </Button>
+              </Link>
+            )}
           </div>
         ))}
       </div>

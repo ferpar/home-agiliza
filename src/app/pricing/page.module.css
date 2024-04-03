@@ -65,9 +65,10 @@
 
 .price_and_discounted {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  margin: 15px 0;
 }
 
 .discount {
@@ -111,7 +112,7 @@
 .base_features {
   list-style: none;
   padding: 0;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .features {
@@ -162,6 +163,11 @@
   .base_features {
     max-width: 500px;
   }
+
+  .price_and_discounted {
+    flex-direction: row;
+    gap: 10px;
+  }
 }
 
 @media (min-width: 800px) {
@@ -174,7 +180,7 @@
 
   .features,
   .base_features {
-    max-width: 300px;
+    max-width: 400px;
   }
 
   .pricing_tier {
