@@ -65,7 +65,9 @@ export default function Pricing() {
   };
 
   const handleLoad = () => {
-    if (!window.Chargebee.getInstance()) {
+    try {
+      window.Chargebee.getInstance();
+    } catch (e) {
       // Initialize Chargebee in case it hasn't been initialized yet
       window.Chargebee.init({ site: "agilizaseller-test" });
     }
