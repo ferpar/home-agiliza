@@ -1,12 +1,15 @@
 import "./globals.css";
-import { Saira, Jura, Yaldevi, Ojuju } from "next/font/google";
+import { Saira, Jura } from "next/font/google";
 import NavProvider from "@/components/NavContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { getString } from "../helpers/i18n";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import Script from "next/script";
+
+// export const viewport = {
+//   colorScheme: "light only",
+// }
 
 const montserrat = Saira({
   subsets: ["latin"],
@@ -21,7 +24,6 @@ const ptSerif = Jura({
 export const metadata = {
   title: "Agiliza Seller",
   description: "Vende más, trabaja menos",
-  colorScheme: "light only",
   openGraph: {
     title: "Agiliza Seller",
     description: "Vende más, trabaja menos",
