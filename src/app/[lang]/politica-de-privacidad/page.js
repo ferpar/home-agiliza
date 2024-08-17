@@ -1,4 +1,4 @@
-import { getString } from "../../helpers/i18n";
+import { getString } from "../../../helpers/i18n";
 import styles from "./page.module.css";
 
 export const metadata = {
