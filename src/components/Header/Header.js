@@ -9,7 +9,7 @@ import SideNav from "./SideNav";
 import LogUser from "./LogUser/LogUser";
 import Image from "next/image";
 
-function Header({ path }) {
+function Header({ path, dict }) {
   const [scrolled, setScrolled] = React.useState(null);
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -67,9 +67,9 @@ function Header({ path }) {
               scrolled && !isOpen && styles["logo-scrolled"]
             }`}
           />
-          <h3>Agiliza Seller</h3>
+          <h3>{dict["TITLE"]}</h3>
         </a>
-        <TopNav actualPath={actualPath} handlePathChange={handlePathChange} />
+        <TopNav actualPath={actualPath} handlePathChange={handlePathChange} dict={dict} />
         <LogUser />
         <Hamburger
           darkTheme={darkTheme && !scrolled}
@@ -83,6 +83,7 @@ function Header({ path }) {
         handlePathChange={handlePathChange}
         isOpen={isOpen}
         onClick={() => setIsOpen(false)}
+        dict={dict}
       />
     </>
   );

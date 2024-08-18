@@ -1,23 +1,24 @@
-import { getString } from "../../../helpers/i18n";
 import styles from "./page.module.css";
+import { getDictionary } from "../dictionaries";
 
 export const metadata = {
   title: "Terminos y Condiciones | Agiliza Seller",
   description: "Terminos y Condiciones de Agiliza Seller",
 };
 
-export default function Advice() {
+export default async function Advice({ params: { lang } }) {
+  const dict = await getDictionary(lang);
   const articleNums = Array.from({ length: 12 }, (_, i) => i + 1);
   const articles = articleNums.map((num) => {
     return {
-      title: getString(`LEGAL_HEADING_${num}`),
-      content: getString(`LEGAL_P${num}`),
+      title: dict[`LEGAL_HEADING_${num}`],
+      content: dict[`LEGAL_P${num}`],
     };
   });
 
   return (
     <main className={styles["main"] + " " + "legal-terms-wrapper"}>
-      <h1>{getString("LEGAL_TITLE")}</h1>
+      <h1>{dict["LEGAL_TITLE"]}</h1>
       <div className={`${styles["wrapper"]}`}>
         <ol>
           {articles.map((article, idx) => (

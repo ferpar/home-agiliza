@@ -17,8 +17,6 @@ export function middleware(request) {
   // dont redirect if it's an image
   if (pathnameImageFormat) return;
 
-  console.log("!!pathname", pathname);
-
   if (
     pathname.startsWith(`/${defaultLocale}/`) ||
     pathname === `/${defaultLocale}`
@@ -30,10 +28,8 @@ export function middleware(request) {
       ),
       request.url,
     );
-    console.log("Pathname has default locale, redirecting", newUrl.href);
     return NextResponse.redirect(newUrl);
   }
-  console.log("after redirect", pathname);
 
   const pathnameHasLocale = i18n.locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
@@ -46,18 +42,7 @@ export function middleware(request) {
 
   // Rewrite if there is no locale
   if (locale === defaultLocale) {
-    console.log("Locale is default locale, rewriting");
-    console.log("locales", { defaultLocale, locales: i18n.locales, locale });
     const newUrl = new URL(`/${defaultLocale}${pathname}`, request.url);
-    console.log("New URL", {
-      pathname: newUrl.pathname,
-      href: newUrl.href,
-      host: newUrl.host,
-      origin: newUrl.origin,
-      search: newUrl.search,
-      searchParams: newUrl.searchParams,
-      toString: newUrl.toString,
-    });
     return NextResponse.rewrite(newUrl);
   }
 

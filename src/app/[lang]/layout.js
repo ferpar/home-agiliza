@@ -6,10 +6,7 @@ import Footer from "@/components/Footer";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import Script from "next/script";
-
-// export const viewport = {
-//   colorScheme: "light only",
-// }
+import { getDictionary } from "./dictionaries";
 
 const montserrat = Saira({
   subsets: ["latin"],
@@ -21,7 +18,7 @@ const ptSerif = Jura({
   variable: "--font-pt-serif",
 });
 
-export const metadata = {
+const metadata = {
   title: "Agiliza Seller",
   description: "Vende más, trabaja menos",
   openGraph: {
@@ -34,7 +31,20 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children, params:{ lang } }) {
+export async function generateMetadata({params, searchParams}) {
+  return {
+    title: metadata.title,
+    description: metadata.description,
+    openGraph: {
+      ...metadata.openGraph,
+      locale: params.lang,
+      url: `https://agilizaSeller.com/${params.lang}${searchParams}`,
+    },
+  };
+}
+
+export default async function RootLayout({ children, params:{ lang } }) {
+  const dict = await getDictionary(lang);
   return (
     <html lang={lang} className={`${ptSerif.variable} ${montserrat.variable}`}>
       <Script id="tawk" type="text/javascript" strategy="lazyOnload">
@@ -53,9 +63,9 @@ export default function RootLayout({ children, params:{ lang } }) {
       <body>
         <NavProvider>
           <Theme>
-            <Header />
+            <Header dict={dict}/>
             {children}
-            <Footer />
+            <Footer dict={dict}/>
           </Theme>
         </NavProvider>
       </body>

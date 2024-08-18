@@ -10,43 +10,37 @@ import {
 import styles from "./FeatureArray.module.css";
 import FadeIn from "../FadeIn/FadeIn";
 
-const features = [
-  {
-    feature: "Gestionar múltiples ofertas, sabiendo qué falta en cada una.",
-    icon: RowsIcon,
-  },
-  {
-    feature:
-      "Introducir costes en cualquier moneda. Haciéndose los cálculos correctamente.",
-    icon: SketchLogoIcon,
-  },
-  {
-    feature:
-      "Calcular tarifas de Amazon automáticamente. Sin errores por olvido de datos.",
-    icon: UpdateIcon,
-  },
-  {
-    feature:
-      "Conocer el margen de beneficio, así como el ROI tanto para la compra de test como para mayores cantidades.",
-    icon: Crosshair2Icon,
-  },
-  {
-    feature:
-      "Obtener el resultado final para distintos Incoterms. Sabiendo el coste total de la mercancía.",
-    icon: GlobeIcon,
-  },
-  {
-    feature: "Ver de manera ágil el resultado para distintos PVPs. ",
-    icon: CounterClockwiseClockIcon,
-  },
-  {
-    feature:
-      "Saber de un vistazo cuál es el proveedor que te está dando la mejor oferta, teniendo en cuenta todos los factores.",
-    icon: RocketIcon,
-  },
-];
-
-export default function FeatureArray() {
+export default function FeatureArray({ dict }) {
+  const features = [
+    {
+      feature: dict["FEATURE_1"],
+      icon: RowsIcon,
+    },
+    {
+      feature: dict["FEATURE_2"],
+      icon: SketchLogoIcon,
+    },
+    {
+      feature: dict["FEATURE_3"],
+      icon: UpdateIcon,
+    },
+    {
+      feature: dict["FEATURE_4"],
+      icon: Crosshair2Icon,
+    },
+    {
+      feature: dict["FEATURE_5"],
+      icon: GlobeIcon,
+    },
+    {
+      feature: dict["FEATURE_6"],
+      icon: CounterClockwiseClockIcon,
+    },
+    {
+      feature: dict["FEATURE_7"],
+      icon: RocketIcon,
+    },
+  ];
   return (
     <section className={styles.wrapper}>
       <div className={styles.array}>

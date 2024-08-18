@@ -11,12 +11,11 @@ export const metadata = {
 import { getDictionary } from './dictionaries'
 
 export default async function Home({ params: { lang } }) {
-  console.log(lang)
   const dict = await getDictionary(lang)
   return (
     <main className={styles.main}>
-      <Hero />
-      <About />
+      <Hero dict={dict} />
+      <About dict={dict} />
     </main>
   );
 }

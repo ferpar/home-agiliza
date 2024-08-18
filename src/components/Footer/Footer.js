@@ -21,7 +21,7 @@ const footerLinks = [
   // },
 ];
 
-function Footer() {
+function Footer({ dict }) {
   const { setCurrentPath } = React.useContext(NavContext);
 
   const handlePathChange = (newURL) => {
@@ -37,7 +37,7 @@ function Footer() {
           href="https://www.google.com/maps/place/C.+de+Clara+del+Rey,+36,+Chamart%C3%ADn,+28002+Madrid"
           target="_blank"
         >
-          {getString("ADDRESS")}
+          {dict["ADDRESS"]}
         </a>
       </div>
       <nav>
@@ -48,7 +48,7 @@ function Footer() {
                 href={link.path}
                 onClick={() => handlePathChange(link.path)}
               >
-                {getString(link.name)}
+                {dict[link.name]}
               </Link>
             </li>
           ))}
