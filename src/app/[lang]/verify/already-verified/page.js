@@ -1,10 +1,11 @@
-import { getString } from "@/helpers/i18n";
+import { getDictionary } from "../../dictionaries";
 
-export default function AlreadyVerified() {
+export default async function AlreadyVerified({ params: { lang } }) {
+  const dict = await getDictionary(lang);
   return (
     <>
-      <h1>{getString("VERIFICATION_ALREADY_VERIFIED")}</h1>
-      <p>{getString("VERIFICACION_ALREADY_VERIFIED_DESCR")}</p>
+      <h1>{dict["VERIFICATION_ALREADY_VERIFIED"]}</h1>
+      <p>{dict["VERIFICACION_ALREADY_VERIFIED_DESCR"]}</p>
     </>
   );
 }

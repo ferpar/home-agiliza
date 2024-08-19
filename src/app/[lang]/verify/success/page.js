@@ -1,10 +1,11 @@
-import { getString } from "@/helpers/i18n";
+import { getDictionary } from "../../dictionaries";
 
-export default function VerifySuccess() {
+export default async function VerifySuccess({ params: { lang } }) {
+  const dict = await getDictionary(lang);
   return (
     <>
-      <h1>{getString("VERIFICATION_SUCCESS")}</h1>
-      <p>{getString("VERIFICACION_SUCCESS_DESCR")}</p>
+      <h1>{dict["VERIFICATION_SUCCESS"]}</h1>
+      <p>{dict["VERIFICACION_SUCCESS_DESCR"]}</p>
     </>
   );
 }
