@@ -97,5 +97,20 @@
   "FEATURE_4": "Know the profit margin and ROI for both test purchases and larger quantities.",
   "FEATURE_5": "Get the final result for different Incoterms, knowing the total cost of the merchandise.",
   "FEATURE_6": "Quickly see the result for different selling prices.",
-  "FEATURE_7": "Easily identify which supplier is giving you the best offer, considering all factors."
+  "FEATURE_7": "Easily identify which supplier is giving you the best offer, considering all factors.",
+  "START_TRIAL": "Start Free Trial (3 days)",
+  "ORDER_NOW": "Order Now",
+  "MONTHLY_BILLING": "(facturado mensualmente)",
+  "ANNUAL_BILLING": "(facturado anualmente)",
+  "HANDLE_ORDER_ERROR": "An error occurred while processing your order. Please try again or contact us at hola@agilizaseller.com",
+  "LAUNCH_OFFER": "Launch Offer",
+  "LAUNCH_OFFER_DESCR": "(for the lifetime of the subscription, if you sign up now)",
+  "PRICING_FEATURE_1": "Margin and ROI calculation for Freelancers with equivalence surcharge",
+  "PRICING_FEATURE_2": "Margin and ROI calculation for Businesses",
+  "PRICING_FEATURE_3": "Accurate Amazon fee calculations",
+  "PRICING_FEATURE_4": "Unlimited quotes",
+  "PRICING_FEATURE_5": "Cost calculation based on quantities",
+  "PRICING_FEATURE_6": "Cost calculation based on Incoterms",
+  "PRICING_FEATURE_7": "Unlimited products",
+  "PRICING_FEATURE_8": "Automatic currency conversion between USD and EUR"
 }

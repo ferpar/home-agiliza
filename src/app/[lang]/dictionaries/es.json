@@ -97,5 +97,20 @@
   "FEATURE_4": "Conocer el margen de beneficio, así como el ROI tanto para la compra de test como para mayores cantidades.",
   "FEATURE_5": "Obtener el resultado final para distintos Incoterms. Sabiendo el coste total de la mercancía.",
   "FEATURE_6": "Ver de manera ágil el resultado para distintos PVPs. ",
-  "FEATURE_7": "Saber de un vistazo cuál es el proveedor que te está dando la mejor oferta, teniendo en cuenta todos los factores."
+  "FEATURE_7": "Saber de un vistazo cuál es el proveedor que te está dando la mejor oferta, teniendo en cuenta todos los factores.",
+  "START_TRIAL": "Empezar Prueba Gratuita (3 días)",
+  "ORDER_NOW": "Contratar",
+  "MONTHLY_BILLING": "(facturado mensualmente)",
+  "ANNUAL_BILLING": "(facturado anualmente)",
+  "HANDLE_ORDER_ERROR": "Ha ocurrido un error al procesar tu pedido. Por favor, inténtalo de nuevo más tarde o ponte en contacto con hola@agilizaseller.com",
+  "LAUNCH_OFFER": "Oferta de Lanzamiento",
+  "LAUNCH_OFFER_DESCR": "(para toda la vida de la suscripción, contratando ahora)",
+  "PRICING_FEATURE_1": "Cálculo de margen y ROI para Autónomos con recargo de equivalencia",
+  "PRICING_FEATURE_2": "Cálculo de margen y ROI para Empresas",
+  "PRICING_FEATURE_3": "Cálculo de tarifas de amazon exactas",
+  "PRICING_FEATURE_4": "Cotizaciones ilimitadas",
+  "PRICING_FEATURE_5": "Cálculo de costes en funcion de cantidades",
+  "PRICING_FEATURE_6": "Cálculo de costes en funcion de incoterms",
+  "PRICING_FEATURE_7": "Productos ilimitados",
+  "PRICING_FEATURE_8": "Conversion de divisa automática entre USD y EUR"
 }
