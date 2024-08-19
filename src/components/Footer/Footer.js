@@ -31,7 +31,7 @@ function Footer({ dict }) {
   return (
     <footer className={styles["site-footer"]}>
       <div className={styles["footer-contact"]}>
-        <h3>Contáctanos</h3>
+        <h3>{dict["CONTACT"]}</h3>
         <a href="mailto:hola@agilizaseller.com">hola@agilizaseller.com</a>
         <a
           href="https://www.google.com/maps/place/C.+de+Clara+del+Rey,+36,+Chamart%C3%ADn,+28002+Madrid"

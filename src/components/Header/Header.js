@@ -70,7 +70,7 @@ function Header({ path, dict }) {
           <h3>{dict["TITLE"]}</h3>
         </a>
         <TopNav actualPath={actualPath} handlePathChange={handlePathChange} dict={dict} />
-        <LogUser />
+        <LogUser dict={dict}/>
         <Hamburger
           darkTheme={darkTheme && !scrolled}
           hide={true}
