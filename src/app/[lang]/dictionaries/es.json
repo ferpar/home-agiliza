@@ -112,5 +112,6 @@
   "PRICING_FEATURE_5": "Cálculo de costes en funcion de cantidades",
   "PRICING_FEATURE_6": "Cálculo de costes en funcion de incoterms",
   "PRICING_FEATURE_7": "Productos ilimitados",
-  "PRICING_FEATURE_8": "Conversion de divisa automática entre USD y EUR"
+  "PRICING_FEATURE_8": "Conversion de divisa automática entre USD y EUR",
+  "QUOTES_MONTHLY": "Cotizaciones mensual"
 }

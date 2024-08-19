@@ -48,7 +48,7 @@ export default function Pricing({ dict }) {
   const plans = {
     monthly: [
       {
-        name: "Cotizaciones Mensual",
+        name: dict["QUOTES_MONTHLY"],
         price: 12.7,
         data_cb_item: "Cotizaciones-EUR-Monthly",
         discount: {
