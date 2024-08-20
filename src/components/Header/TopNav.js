@@ -1,9 +1,8 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
-import { getString } from "../../helpers/i18n";
 import headerLinks from "./headerLinks";
 
-export default function TopNav({ actualPath, handlePathChange }) {
+export default function TopNav({ actualPath, handlePathChange, dict }) {
   return (
     <nav className={styles["top-nav"]}>
       <ul className={styles["header-nav-links"]}>
@@ -15,7 +14,7 @@ export default function TopNav({ actualPath, handlePathChange }) {
             }`}
           >
             <Link href={link.path} onClick={() => handlePathChange(link.path)}>
-              {getString(link.name)}
+              {dict[link.name]}
             </Link>
           </li>
         ))}

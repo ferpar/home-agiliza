@@ -1,3 +1,4 @@
+
 "use client";
 import React from "react";
 import styles from "./page.module.css";
@@ -12,28 +13,28 @@ function isValidUUID(uuid) {
   return regex.test(uuid);
 }
 
-export default function Pricing() {
+export default function Pricing({ dict }) {
   const searchParams = useSearchParams();
   const uuid = searchParams.get("uuid");
   const [monthly, setMonthly] = React.useState(true);
   const [cbInstance, setCbInstance] = React.useState(null);
   const features = {
     cotizaciones: [
-      "Cálculo de margen y ROI para Autónomos con recargo de equivalencia",
-      "Cálculo de margen y ROI para Empresas",
-      "Cálculo de tarifas de amazon exactas",
-      "Cotizaciones ilimitadas",
-      "Cálculo de costes en funcion de cantidades",
-      "Cálculo de costes en funcion de incoterms",
-      "Productos ilimitados",
-      "Conversion de divisa automática entre USD y EUR",
+      dict["PRICING_FEATURE_1"],
+      dict["PRICING_FEATURE_2"],
+      dict["PRICING_FEATURE_3"],
+      dict["PRICING_FEATURE_4"],
+      dict["PRICING_FEATURE_5"],
+      dict["PRICING_FEATURE_6"],
+      dict["PRICING_FEATURE_7"],
+      dict["PRICING_FEATURE_8"],
     ],
   };
   const coupons = {
     lanzamiento: {
       name: [
-        "Oferta de Lanzamiento",
-        "(para toda la vida de la suscripción, contratando ahora)",
+        dict["LAUNCH_OFFER"],
+        dict["LAUNCH_OFFER_DESCR"],
       ],
       coupons: {
         cot_mens: {
@@ -47,7 +48,7 @@ export default function Pricing() {
   const plans = {
     monthly: [
       {
-        name: "Cotizaciones Mensual",
+        name: dict["QUOTES_MONTHLY"],
         price: 12.7,
         data_cb_item: "Cotizaciones-EUR-Monthly",
         discount: {
@@ -88,7 +89,7 @@ export default function Pricing() {
     } catch (e) {
       console.error(e);
       window.alert(
-        "Ha ocurrido un error al procesar tu pedido. Por favor, inténtalo de nuevo más tarde o ponte en contacto con hola@agilizaseller.com",
+        dict["HANDLE_ORDER_ERROR"],
       );
     }
   };
@@ -162,7 +163,7 @@ export default function Pricing() {
               </div>
             </div>
             <div className={styles.perMonth}>
-              {monthly ? "(facturado mensualmente)" : "(facturado anualmente)"}
+              {monthly ? dict["MONTHLY_BILLING"] : dict["ANNUAL_BILLING"]}
             </div>
             {plan.base_features.length > 0 && (
               <>
@@ -187,12 +188,12 @@ export default function Pricing() {
                   handleOrder(plan);
                 }}
               >
-                Contratar
+                {dict["ORDER_NOW"]}
               </Button>
             ) : (
               <Link href="https://app.agilizaseller.com/register">
                 <Button className={styles.button} size="5">
-                  Empezar Prueba Gratuita (3 días)
+                  {dict["START_TRIAL"]}
                 </Button>
               </Link>
             )}

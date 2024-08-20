@@ -1,27 +1,26 @@
 import styles from "./About.module.css";
 import FeatureArray from "../FeatureArray/FeatureArray";
 
-export default function About() {
+export default function About({ dict }) {
   return (
     <section className={styles["about"]}>
       <div className={styles["wrapper"]}>
         <div className={styles["text"]}>
           <p className={styles["mainText"]}>
-            <strong>Agiliza Seller</strong> es una herramienta específica para
-            vendedores de amazon
+            <strong>{dict["TITLE"]}</strong>
+            {dict["ABOUT_1"]}
           </p>
           <br />
           <p style={{ fontSize: "2rem" }}>
-            Que permite las siguientes funcionalidades:
+            {dict["ABOUT_2"]}
           </p>
           <br />
         </div>
-        <FeatureArray />
+        <FeatureArray dict={dict}/>
         <br />
         <br />
         <p style={{ fontSize: "2rem" }}>
-          Y esto es sólo el principio... Vamos a introducir muchas más
-          funcionalidades en colaboración con los mejores sellers.
+          {dict["ABOUT_3"]}
         </p>
       </div>
     </section>

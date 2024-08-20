@@ -21,7 +21,7 @@ const footerLinks = [
   // },
 ];
 
-function Footer() {
+function Footer({ dict }) {
   const { setCurrentPath } = React.useContext(NavContext);
 
   const handlePathChange = (newURL) => {
@@ -31,13 +31,13 @@ function Footer() {
   return (
     <footer className={styles["site-footer"]}>
       <div className={styles["footer-contact"]}>
-        <h3>Contáctanos</h3>
+        <h3>{dict["CONTACT"]}</h3>
         <a href="mailto:hola@agilizaseller.com">hola@agilizaseller.com</a>
         <a
           href="https://www.google.com/maps/place/C.+de+Clara+del+Rey,+36,+Chamart%C3%ADn,+28002+Madrid"
           target="_blank"
         >
-          {getString("ADDRESS")}
+          {dict["ADDRESS"]}
         </a>
       </div>
       <nav>
@@ -48,7 +48,7 @@ function Footer() {
                 href={link.path}
                 onClick={() => handlePathChange(link.path)}
               >
-                {getString(link.name)}
+                {dict[link.name]}
               </Link>
             </li>
           ))}

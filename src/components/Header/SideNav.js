@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./Header.module.css";
-import { getString } from "../../helpers/i18n";
 import headerLinks from "./headerLinks";
 
 export default function SideNav({
@@ -8,6 +7,7 @@ export default function SideNav({
   handlePathChange,
   isOpen,
   onClick,
+  dict
 }) {
   return (
     <nav
@@ -30,7 +30,7 @@ export default function SideNav({
             }`}
           >
             <Link href={link.path} onClick={() => handlePathChange(link.path)}>
-              {getString(link.name)}
+              {dict[link.name]}
             </Link>
           </li>
         ))}

@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./LogUser.module.css";
 import { Button } from "@radix-ui/themes";
 
-export default function LogUser() {
+export default function LogUser({dict}) {
   const [clicked, setClicked] = React.useState(false);
   return (
     <div className={styles.wrapper}>
@@ -17,7 +17,7 @@ export default function LogUser() {
           }}
           onClick={() => setClicked(true)}
         >
-          {clicked ? "Cargando..." : "Probar la App Gratis!"}
+          {clicked ? dict["LOADING"] : dict["CTA"]}
         </Button>
       </Link>
     </div>

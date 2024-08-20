@@ -8,8 +8,9 @@ import Hamburger from "../Hamburger";
 import SideNav from "./SideNav";
 import LogUser from "./LogUser/LogUser";
 import Image from "next/image";
+import logoImage from "./logo.svg"
 
-function Header({ path }) {
+function Header({ path, dict }) {
   const [scrolled, setScrolled] = React.useState(null);
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -61,16 +62,16 @@ function Header({ path }) {
           <Image
             width={50}
             height={50}
-            src="/images/logo.svg"
+            src={logoImage}
             alt="Agiliza Seller logo"
             className={`${styles["logo"]} ${
               scrolled && !isOpen && styles["logo-scrolled"]
             }`}
           />
-          <h3>Agiliza Seller</h3>
+          <h3>{dict["TITLE"]}</h3>
         </a>
-        <TopNav actualPath={actualPath} handlePathChange={handlePathChange} />
-        <LogUser />
+        <TopNav actualPath={actualPath} handlePathChange={handlePathChange} dict={dict} />
+        <LogUser dict={dict}/>
         <Hamburger
           darkTheme={darkTheme && !scrolled}
           hide={true}
@@ -83,6 +84,7 @@ function Header({ path }) {
         handlePathChange={handlePathChange}
         isOpen={isOpen}
         onClick={() => setIsOpen(false)}
+        dict={dict}
       />
     </>
   );

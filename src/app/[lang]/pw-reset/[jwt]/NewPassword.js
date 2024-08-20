@@ -1,12 +1,11 @@
 "use client";
-import { getString } from "@/helpers/i18n";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@radix-ui/themes";
 import "dotenv/config";
 import styles from "./page.module.css";
 
-export default function NewPassword({ params }) {
+export default function NewPassword({ dict, jwt }) {
   const [successMessage, setSuccessMessage] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -16,10 +15,10 @@ export default function NewPassword({ params }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (password !== confirmPassword) {
-      setError(getString("PW_RESET_PASSWORDS_DONT_MATCH"));
+      setError(dict["PW_RESET_PASSWORDS_DONT_MATCH"]);
       return;
     } else if (password.length < 6) {
-      setError(getString("PW_RESET_PASSWORD_INVALID"));
+      setError(dict["PW_RESET_PASSWORD_INVALID"]);
       return;
     }
 
@@ -36,18 +35,18 @@ export default function NewPassword({ params }) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            token: params.jwt,
+            token: jwt,
             new_password: password,
           }),
         },
       );
       if (!response.ok) {
         if (response.status === 401) {
-          throw new Error(getString("PW_RESET_INVALID_TOKEN"));
+          throw new Error(dict["PW_RESET_INVALID_TOKEN"]);
         }
-        throw new Error(getString("PW_RESET_UNKNOWN_ERROR"));
+        throw new Error(dict["PW_RESET_UNKNOWN_ERROR"]);
       }
-      setSuccessMessage(getString("PW_RESET_SUCCESS_MESSAGE"));
+      setSuccessMessage(dict["PW_RESET_SUCCESS_MESSAGE"]);
       setTimeout(() => {
         router.push(`${process.env.NEXT_PUBLIC_FE_BASEURL}/login/`); // Redirect to login page
       }, 3000); // Delay for 3 seconds to allow user to read the message
@@ -59,12 +58,12 @@ export default function NewPassword({ params }) {
 
   return (
     <div className={styles.main}>
-      <h1>{getString("PW_RESET_TITLE")}</h1>
+      <h1>{dict["PW_RESET_TITLE"]}</h1>
       <div className="form-container">
         <form className={styles.password_reset_form} onSubmit={handleSubmit}>
           <div supressHidrationWarning className={styles.input_group}>
             <label htmlFor="password">
-              {getString("PW_RESET_NEW_PASSWORD")}
+              {dict["PW_RESET_NEW_PASSWORD"]}
             </label>
             <input
               type="password"
@@ -76,7 +75,7 @@ export default function NewPassword({ params }) {
           </div>
           <div suppressHydrationWarning className={styles.input_group}>
             <label htmlFor="confirmPassword">
-              {getString("PW_RESET_CONFIRM_PASSWORD")}
+              {dict["PW_RESET_CONFIRM_PASSWORD"]}
             </label>
             <input
               type="password"
@@ -95,7 +94,7 @@ export default function NewPassword({ params }) {
             </div>
           )}
           <div className={styles.button_group}>
-            <Button type="submit">{getString("PW_RESET_SEND_BUTTON")}</Button>
+            <Button type="submit">{dict["PW_RESET_SEND_BUTTON"]}</Button>
           </div>
         </form>
       </div>
