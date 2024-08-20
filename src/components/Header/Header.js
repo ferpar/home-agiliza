@@ -40,7 +40,14 @@ function Header({ path, dict }) {
   // when rendering on the server, use the path from the request headers
   const actualPath = currentPath ? currentPath : path;
 
-  const externalPage = headerLinks.find((link) => link.path === actualPath)
+  const externalPage = headerLinks.find((link) => {
+    return (
+      link.path === actualPath ||
+      link.pathES === actualPath ||
+      link.pathEN === actualPath ||
+      link.pathLang === actualPath
+    );
+  })
     ? false
     : true;
 
@@ -54,8 +61,6 @@ function Header({ path, dict }) {
           link.pathLang === actualPath
         );
       })?.darkTheme;
-
-    console.log("Header.js: actualPath: ", actualPath);
 
   return (
     <>
