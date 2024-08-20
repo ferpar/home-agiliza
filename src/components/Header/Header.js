@@ -8,6 +8,7 @@ import Hamburger from "../Hamburger";
 import SideNav from "./SideNav";
 import LogUser from "./LogUser/LogUser";
 import Image from "next/image";
+import logoImage from "./logo.svg"
 
 function Header({ path, dict }) {
   const [scrolled, setScrolled] = React.useState(null);
@@ -61,7 +62,7 @@ function Header({ path, dict }) {
           <Image
             width={50}
             height={50}
-            src="/images/logo.svg"
+            src={logoImage}
             alt="Agiliza Seller logo"
             className={`${styles["logo"]} ${
               scrolled && !isOpen && styles["logo-scrolled"]

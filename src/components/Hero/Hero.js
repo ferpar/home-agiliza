@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
+import cotizaciones from "./Cotizaciones.gif"
 
 export default function Hero({ dict }) {
   return (
@@ -16,7 +17,7 @@ export default function Hero({ dict }) {
         </div>
         <div className={styles["background"]}>
           <Image
-            src="/images/Cotizaciones.gif"
+            src={cotizaciones}
             alt="hero"
             className={styles["hero-img"]}
             width={1920}
