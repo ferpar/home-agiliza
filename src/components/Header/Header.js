@@ -8,7 +8,7 @@ import Hamburger from "../Hamburger";
 import SideNav from "./SideNav";
 import LogUser from "./LogUser/LogUser";
 import Image from "next/image";
-import logoImage from "./logo.svg"
+import logoImage from "./logo.svg";
 
 function Header({ path, dict }) {
   const [scrolled, setScrolled] = React.useState(null);
@@ -46,7 +46,13 @@ function Header({ path, dict }) {
 
   const darkTheme = externalPage
     ? true
-    : headerLinks.find((link) => link.path === actualPath)?.darkTheme;
+    : headerLinks.find((link) => {
+        return (
+          link.path === actualPath ||
+          link.pathES === actualPath ||
+          link.pathEN === actualPath
+        );
+      })?.darkTheme;
 
   return (
     <>
@@ -70,8 +76,12 @@ function Header({ path, dict }) {
           />
           <h3>{dict["TITLE"]}</h3>
         </a>
-        <TopNav actualPath={actualPath} handlePathChange={handlePathChange} dict={dict} />
-        <LogUser dict={dict}/>
+        <TopNav
+          actualPath={actualPath}
+          handlePathChange={handlePathChange}
+          dict={dict}
+        />
+        <LogUser dict={dict} />
         <Hamburger
           darkTheme={darkTheme && !scrolled}
           hide={true}
