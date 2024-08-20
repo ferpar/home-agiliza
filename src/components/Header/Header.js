@@ -50,7 +50,8 @@ function Header({ path, dict }) {
         return (
           link.path === actualPath ||
           link.pathES === actualPath ||
-          link.pathEN === actualPath
+          link.pathEN === actualPath ||
+          link.pathLang === actualPath
         );
       })?.darkTheme;
 
