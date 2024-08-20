@@ -1,8 +1,8 @@
 import "./globals.css";
 import { Saira, Jura } from "next/font/google";
-import NavProvider from "@/components/NavContext";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import NavProvider from "../../components/NavContext";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import "@radix-ui/themes/styles.css";
 import { Theme } from "@radix-ui/themes";
 import Script from "next/script";
