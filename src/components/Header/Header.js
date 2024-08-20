@@ -55,7 +55,7 @@ function Header({ path, dict }) {
         );
       })?.darkTheme;
 
-    console.log("Header.js: actualPath: ", actualPath);
+    console.log("Header.js: actualPath: ", {actualPath, darkTheme});
 
   return (
     <>
