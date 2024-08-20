@@ -54,14 +54,6 @@ function Header({ path, dict }) {
   const darkTheme = externalPage
     ? true
     : headerLinks.find((link) => {
-        console.log({
-          link,
-          actualPath,
-          cond1: link.path === actualPath,
-          cond2: link.pathES === actualPath,
-          cond3: link.pathEN === actualPath,
-          cond4: link.pathLang === actualPath,
-        });
         return (
           link.path === actualPath ||
           link.pathES === actualPath ||
@@ -69,8 +61,6 @@ function Header({ path, dict }) {
           link.pathLang === actualPath
         );
       })?.darkTheme;
-
-  console.log("Header.js: actualPath: ", { actualPath, darkTheme });
 
   return (
     <>
