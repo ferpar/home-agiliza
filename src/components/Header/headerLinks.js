@@ -4,21 +4,24 @@ const headerLinks = [
     path: "/",
     darkTheme: false,
     pathES: "/es",
-    pathEN: "/en"
+    pathEN: "/en",
+    pathLang: "/[lang]"
   },
   {
     name: "APP",
     path: "/app",
     darkTheme: true,
     pathES: "/es/app",
-    pathEN: "/en/app"
+    pathEN: "/en/app",
+    pathLang: "/[lang]/app"
   },
   {
     name: "PRICING",
     path: "/pricing",
     darkTheme: true,
     pathES: "/es/pricing",
-    pathEN: "/en/pricing"
+    pathEN: "/en/pricing",
+    pathLang: "/[lang]/pricing"
   },
 ];
 
