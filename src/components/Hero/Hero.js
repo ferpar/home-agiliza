@@ -1,8 +1,9 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import cotizaciones from "./Cotizaciones.gif"
+import quotesEN from "./QuotesEN.gif"
+import quotesES from "./QuotesES.gif"
 
-export default function Hero({ dict }) {
+export default function Hero({ dict, lang }) {
   return (
     <section className={styles["hero"]}>
       <div className={styles["overlay"]} />
@@ -17,11 +18,12 @@ export default function Hero({ dict }) {
         </div>
         <div className={styles["background"]}>
           <Image
-            src={cotizaciones}
+            src={lang === "es" ? quotesES : quotesEN}
             alt="hero"
             className={styles["hero-img"]}
             width={1920}
             height={969}
+            priority
           />
         </div>
       </section>

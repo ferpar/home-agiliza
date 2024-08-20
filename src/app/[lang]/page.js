@@ -13,7 +13,7 @@ export default async function Home({ params: { lang } }) {
   const dict = await getDictionary(lang)
   return (
     <main className={styles.main}>
-      <Hero dict={dict} />
+      <Hero dict={dict} lang={lang}/>
       <About dict={dict} />
     </main>
   );
