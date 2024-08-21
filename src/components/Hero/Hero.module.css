@@ -41,6 +41,9 @@
   height: 100%;
   object-fit: contain;
   border-radius: 6px;
+  animation: slide-in 1s ease-out;
+  animation-fill-mode: forwards;
+  box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
 }
 
 .overlay {
@@ -108,5 +111,16 @@
     margin-bottom: 2rem;
     font-size: var(--font-size-xxxl);
     font-weight: 400;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(7%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
   }
 }

@@ -26,7 +26,7 @@ const metadata = {
     description: "Vende más, trabaja menos",
     url: "https://agilizaSeller.com/",
     siteName: "Agiliza Seller",
-    locale: "es_ES",
+    locale: "en_US",
     type: "website",
   },
 };

@@ -1,0 +1,40 @@
+.blueBg {
+  background: linear-gradient(
+    -43deg,
+    hsl(225.31deg 54% 14%),
+    hsl(225.38deg 45% 40%)
+  );
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  color: white;
+}
+
+.mainContent {
+  margin-top: 5rem;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem 2rem;
+}
+
+.featureItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.question {
+  padding-top: 2rem;
+  font-size: var(--font-size-l);
+  font-weight: 700;
+  color: hsl(225.38deg 45% 40%);
+}
+
+.answer {
+  font-size: var(--font-size-m);
+  color: hsl(225.38deg 45% 40%);
+}
