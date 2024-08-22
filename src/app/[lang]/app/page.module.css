@@ -37,4 +37,24 @@
 .answer {
   font-size: var(--font-size-m);
   color: hsl(225.38deg 45% 40%);
+  animation: drop-in 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+.quotesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+@keyframes drop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
