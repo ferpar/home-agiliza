@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import QuotesModule from "./Quotes/QuotesModule";
 import Modules from "./Modules";
 import { getDictionary } from "../dictionaries";
 
