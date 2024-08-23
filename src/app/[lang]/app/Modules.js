@@ -1,5 +1,5 @@
 "use client";
-import { RadioCards } from "@radix-ui/themes";
+import { RadioCards, Separator } from "@radix-ui/themes";
 import QuotesModule from "./Quotes/QuotesModule";
 import React from "react";
 export default function AppModules({ dict }) {
