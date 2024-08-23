@@ -10,7 +10,7 @@ const headerLinks = [
   {
     name: "APP",
     path: "/app",
-    darkTheme: false,
+    darkTheme: true,
     pathES: "/es/app",
     pathEN: "/en/app",
     pathLang: "/[lang]/app"
