@@ -19,15 +19,19 @@
   padding: 5rem 2rem 2rem;
 }
 
+.modules {
+  width: 100%;
+  max-width: 1200px;
+}
+
 .featureItem {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
 }
 
 .question {
-  padding-top: 2rem;
+  padding-top: 1rem;
   font-size: var(--font-size-l);
   font-weight: 700;
 }
@@ -43,6 +47,12 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+}
+
+@media (min-width: 1248px) {
+  .modules {
+    max-width: 75%;
+  }
 }
 
 @keyframes drop-in {
