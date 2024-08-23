@@ -1,6 +1,7 @@
 import styles from "../page.module.css"
 import FeatureItem from "./FeatureItem";
 
+
 export default function QuotesModule({ dict }) {
   const features = [
     {
@@ -56,6 +57,9 @@ export default function QuotesModule({ dict }) {
           </p>
           <p>...ahhhh, que no?</p>
           <p>¿Qué es lo que pasa?</p>
+          <video controls width="500" autoPlay muted>
+            <source src={require("../../../../assets/FOBEXW.mp4")} type="video/mp4" />
+          </video>
           <ul className={styles.quotesGrid}>
             {features.map((feature, index) => (
               <FeatureItem key={index} {...feature} />

@@ -7,7 +7,17 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-  color: white;
+}
+
+.lightBlueBg {
+  background: linear-gradient(
+    -43deg,
+    hsl(225.31deg 54% 64%),
+    hsl(225.38deg 45% 80%)
+  );
+  position: absolute;
+  inset: 0;
+  z-index: -1;
 }
 
 .mainContent {
@@ -17,6 +27,10 @@
   flex-direction: column;
   align-items: center;
   padding: 5rem 2rem 2rem;
+}
+
+.mainContent p, .mainContent h1, .mainContent h2, .mainContent h3 { 
+  color: white;
 }
 
 .modules {
