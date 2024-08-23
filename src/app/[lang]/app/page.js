@@ -6,7 +6,7 @@ export default function App({ params: { lang } }) {
   const dict = getDictionary(lang);
 
   return (
-    <main className={`${styles.mainContent}`}>
+    <main className={`${styles.mainContent} ${styles.blueBg}`}>
       <h1 style={{marginBottom: "1rem"}}>¿Para que sirve?</h1>
       <div style={{ textAlign: "center", marginBottom: "2rem" }}>
         <p>Nuestro objetivo es hacer que vendas más trabajando menos</p>

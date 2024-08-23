@@ -11,13 +11,12 @@
 }
 
 .mainContent {
-  margin-top: 5rem;
   position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 2rem 2rem;
+  padding: 5rem 2rem 2rem;
 }
 
 .featureItem {
@@ -31,12 +30,10 @@
   padding-top: 2rem;
   font-size: var(--font-size-l);
   font-weight: 700;
-  color: hsl(225.38deg 45% 40%);
 }
 
 .answer {
   font-size: var(--font-size-m);
-  color: hsl(225.38deg 45% 40%);
   animation: drop-in 0.5s ease-out;
   animation-fill-mode: forwards;
 }
