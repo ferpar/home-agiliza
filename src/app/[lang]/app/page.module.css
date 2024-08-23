@@ -51,6 +51,7 @@
 }
 
 .answer {
+  padding-top: 1rem;
   font-size: var(--font-size-m);
   animation: drop-in 0.5s ease-out;
   animation-fill-mode: forwards;

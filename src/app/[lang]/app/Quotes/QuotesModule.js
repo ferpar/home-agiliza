@@ -1,6 +1,5 @@
-import styles from "../page.module.css"
+import styles from "../page.module.css";
 import FeatureItem from "./FeatureItem";
-
 
 export default function QuotesModule({ dict }) {
   const features = [
@@ -48,24 +47,28 @@ export default function QuotesModule({ dict }) {
     },
   ];
   return (
-      <section>
-        <h3>Módulo de Gestión de Cotizaciones</h3>
-        <div >
-          <p>
-            Eres un seller de Amazon, y lo que más disfrutas es pedir
-            cotizaciones para un producto en Alibaba...
-          </p>
-          <p>...ahhhh, que no?</p>
-          <p>¿Qué es lo que pasa?</p>
-          <video controls width="500" autoPlay muted>
-            <source src={require("../../../../assets/FOBEXW.mp4")} type="video/mp4" />
-          </video>
-          <ul className={styles.quotesGrid}>
-            {features.map((feature, index) => (
-              <FeatureItem key={index} {...feature} />
-            ))}
-          </ul>
+    <section>
+      <h3>Módulo de Gestión de Cotizaciones</h3>
+      <div>
+        <p>
+          Eres un seller de Amazon, y lo que más disfrutas es pedir cotizaciones
+          para un producto en Alibaba...
+        </p>
+        <p>...ahhhh, que no?</p>
+        <p>¿Qué es lo que pasa?</p>
+        <ul className={styles.quotesGrid}>
+          {features.map((feature, index) => (
+            <FeatureItem key={index} {...feature} />
+          ))}
+        </ul>
+        <div style={{ display: "flex", justifyContent: "center", margin: "2rem 0 8rem" }}>
+          <div style={{ borderRadius: "5px", overflow: "hidden" }}>
+            <video controls width="800" autoPlay muted>
+              <source src="/assets/FOBEXW.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
   );
 }
