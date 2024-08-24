@@ -2,8 +2,8 @@ import styles from "./page.module.css";
 import Modules from "./Modules";
 import { getDictionary } from "../dictionaries";
 
-export default function App({ params: { lang } }) {
-  const dict = getDictionary(lang);
+export default async function App({ params: { lang } }) {
+  const dict = await getDictionary(lang);
 
   return (
     <main className={`${styles.mainContent} ${styles.blueBg}`}>

@@ -14,10 +14,10 @@ export default function AppModules({ dict }) {
           }}
         >
           <RadioCards.Item value="quotes" style={{ fontWeight: "700" }}>
-            Gestión de Cotizaciones
+            {dict["QUOTES_MODULE"]}
           </RadioCards.Item>
           <RadioCards.Item value="restock" style={{ fontWeight: "700" }}>
-            Gestión de Restock
+            {dict["RESTOCK_MODULE"]}
           </RadioCards.Item>
         </RadioCards.Root>
       </div>

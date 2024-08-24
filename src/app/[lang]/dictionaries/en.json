@@ -113,5 +113,21 @@
   "PRICING_FEATURE_6": "Cost calculation based on Incoterms",
   "PRICING_FEATURE_7": "Unlimited products",
   "PRICING_FEATURE_8": "Automatic currency conversion between USD and EUR",
-  "QUOTES_MONTHLY": "Quotes Monthly"
+  "QUOTES_MONTHLY": "Quotes Monthly",
+  "QUOTES_F1_Q": "Have manufacturers ever not given you all the information you asked for?",
+  "QUOTES_F1_A": "With Agiliza Seller, you can visually manage all the missing data for each quote. So you won't have to search for what data is missing to ask for it again.",
+  "QUOTES_F2_Q": "After talking to 10 or more suppliers, is it a mess to clarify all the data they've given you?",
+  "QUOTES_F2_A": "Visually compare all the quotes you've received, and see at a glance which is the best option.",
+  "QUOTES_F3_Q": "Do you start calculating profitability, only to realize that you were missing a piece of data and have to go ask the manufacturer for it?",
+  "QUOTES_F3_A": "The app clearly alerts you if any data is missing for calculating profitability.",
+  "QUOTES_F4_Q": "Have you ever forgotten to convert from dollars to euros for the manufacturer's prices?",
+  "QUOTES_F4_A": "The app handles the currency conversion, updated daily automatically so you don't have to calculate anything.",
+  "QUOTES_F5_Q": "Have you ever made a mistake calculating one of Amazon's fees? Or perhaps you forgot to update the logistics fee after changing the packaging?",
+  "QUOTES_F5_A": "Agiliza Seller calculates Amazon's reference, logistics, and storage fees without the need to check any table or other tool.",
+  "QUOTES_F6_Q": "Have you imported EXW and wondered if FOB would have been more profitable?",
+  "QUOTES_F6_A": "You will also be able to know with just one click if it is more convenient for you to import FOB or EXW.",
+  "QUOTES_F7_Q": "Are you tired of so many Excel sheets and feel like there has to be 'a better way'?",
+  "QUOTES_F7_A": "There is, and it's Agiliza Seller. It allows you to know with accuracy the profitability of ALL your suppliers for different product selling prices, at a glance. Whether you have 3 suppliers and one product or you're an established seller with 50 products and 80 suppliers. Accessible from any terminal. And you'll always know at a glance which supplier gives you the highest profitability.",
+  "QUOTES_MODULE": "Quote Management",
+  "RESTOCK_MODULE": "Restocking"
 }
