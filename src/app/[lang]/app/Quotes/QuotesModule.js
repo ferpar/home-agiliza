@@ -55,14 +55,12 @@ export default function QuotesModule({ dict }) {
   ];
   return (
     <section>
-      <h3>Módulo de Gestión de Cotizaciones</h3>
+      <h3>{dict["QUOTES_MODULE_TITLE"]}</h3>
       <div>
-        <p>
-          Eres un seller de Amazon, y lo que más disfrutas es pedir cotizaciones
-          para un producto en Alibaba... ...ahhhh, que no?
-        </p>
+        <p>{dict["QUOTES_MODULE_INTRO"]}
+                  </p>
         <div style={{textAlign: "center", paddingTop: "1rem"}}>
-        <h3>¿Qué es lo que pasa?</h3>
+        <h3>{dict["QUOTES_MODULE_SUBTITLE"]}</h3>
         </div>
         <ul className={styles.quotesGrid}>
           {features.map((feature, index) => (

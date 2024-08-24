@@ -7,10 +7,10 @@ export default async function App({ params: { lang } }) {
 
   return (
     <main className={`${styles.mainContent} ${styles.blueBg}`}>
-      <h2 style={{marginBottom: "1rem"}}>¿Para que sirve?</h2>
+      <h2 style={{marginBottom: "1rem"}}>{dict["APP_ABOUT_TITLE"]}</h2>
       <div style={{ textAlign: "center", marginBottom: "2rem" }}>
-        <p>Nuestro objetivo es hacer que vendas más trabajando menos</p>
-        <p>¿Cómo?</p>
+        <p>{dict["APP_ABOUT_INTRO_1"]}</p>
+        <p>{dict["APP_ABOUT_INTRO_2"]}</p>
       </div>
       <Modules dict={dict} />
     </main>
