@@ -23,7 +23,7 @@ export default function FeatureItem({ question, answer, video, image }) {
                 style={{
                   marginTop: "1rem",
                   position: "relative",
-                  height: "200px",
+                  height: "350px",
                 }}
               >
                 <Image

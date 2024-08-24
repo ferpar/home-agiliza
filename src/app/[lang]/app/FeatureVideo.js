@@ -8,7 +8,7 @@ export default function FeatureVideo({ video, ...delegated }) {
       }}
     >
       <div style={{ borderRadius: "5px", overflow: "hidden" }}>
-        <video controls width="800" autoPlay muted {...delegated}>
+        <video controls width="800" muted {...delegated}>
           <source src={video} type="video/mp4" />
         </video>
       </div>
