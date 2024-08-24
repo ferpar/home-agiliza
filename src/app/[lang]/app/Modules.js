@@ -4,7 +4,7 @@ import QuotesModule from "./Quotes/QuotesModule";
 import React from "react";
 import styles from "./page.module.css";
 export default function AppModules({ dict }) {
-  const [selectedModule, setSelectedModule] = React.useState(null); // null, 'quotes', 'restock'
+  const [selectedModule, setSelectedModule] = React.useState('quotes'); // null, 'quotes', 'restock'
   return (
     <div className={styles.modules}>
       <div style={{ paddingBottom: "2rem" }}>

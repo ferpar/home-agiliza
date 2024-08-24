@@ -1,6 +1,5 @@
 import styles from "../page.module.css";
 import FeatureItem from "./FeatureItem";
-import FeatureVideo from "../FeatureVideo";
 
 export default function QuotesModule({ dict }) {
   const features = [
@@ -8,7 +7,7 @@ export default function QuotesModule({ dict }) {
       question:
         "¿Alguna vez los fabricantes no te dan toda la información que pides?",
       answer:
-        "Con Agiliza Seller, puedes puedes gestionar de manera muy visual todos los datos que te faltan en cada cotización. Así que no tendrás que estar buscando qué datos te faltan para volver a pedirlos.",
+        "Con Agiliza Seller, puedes gestionar de manera muy visual todos los datos que te faltan en cada cotización. Así que no tendrás que estar buscando qué datos te faltan para volver a pedirlos.",
       video: 
       "/assets/MissingDataWarning.mp4"
     },
@@ -31,14 +30,14 @@ export default function QuotesModule({ dict }) {
         "¿Alguna vez se te ha olvidado hacer el cambio de dólar a euro para los precios del fabricante?",
       answer:
         "La aplicación se encarga del cambio de divisa, actualizado diariamente de forma automatica para que no tengas que calcular na-da.",
-      image: "ExchangeRate.gif"
+      image: "/assets/ExchangeRate.gif"
     },
     {
       question:
         "¿A lo mejor te has equivocado alguna vez calculando alguna de las tarifas de Amazon? o quizá te hayas olvidado de actualizar la tarifa logística tras cambiar el packaging?",
       answer:
         "Agiliza Seller calcula las tarifas de referencia, logística y almacenamiento de Amazon sin necesidad de mirar ninguna tabla ni ninguna otra herramienta.",
-      vide: "/assets/FeesCalculation.mp4"
+      video: "/assets/FeesCalculation.mp4"
     },
     {
       question:

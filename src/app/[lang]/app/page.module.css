@@ -39,15 +39,20 @@
 }
 
 .featureItem {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid white;
+  padding: 0 1rem 2rem;
+  border-radius: 5px;
 }
 
 .question {
   padding-top: 1rem;
   font-size: var(--font-size-l);
   font-weight: 700;
+  cursor: pointer;
 }
 
 .answer {
@@ -64,9 +69,38 @@
   margin-top: 2rem;
 }
 
+.chevron {
+  position: absolute;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: white;
+  transition: transform 0.5s;
+  bottom: 0;
+  background-color: hsl(225.31deg 54% 14%);
+  margin-bottom: -1rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.chevron:hover {
+  cursor: pointer;
+}
+
+.chevron:active {
+  transform: translateY(2px);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+  transition: transform 0.5s;
+}
+
 @media (min-width: 1248px) {
   .modules {
     max-width: 75%;
+  }
+  .quotesGrid {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
 }
 

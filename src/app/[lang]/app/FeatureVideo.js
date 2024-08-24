@@ -4,7 +4,7 @@ export default function FeatureVideo({ video, ...delegated }) {
       style={{
         display: "flex",
         justifyContent: "center",
-        margin: "2rem 0 8rem",
+        margin: "2rem 0 2rem",
       }}
     >
       <div style={{ borderRadius: "5px", overflow: "hidden" }}>
