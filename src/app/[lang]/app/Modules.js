@@ -7,7 +7,7 @@ export default function AppModules({ dict }) {
   const [selectedModule, setSelectedModule] = React.useState(null); // null, 'quotes', 'restock'
   return (
     <div className={styles.modules}>
-      <div style={{paddingBottom: "2rem"}}>
+      <div style={{ paddingBottom: "2rem" }}>
         <RadioCards.Root
           onValueChange={(value) => {
             setSelectedModule(value);
@@ -16,7 +16,9 @@ export default function AppModules({ dict }) {
           <RadioCards.Item value="quotes" style={{ fontWeight: "700" }}>
             Gestión de Cotizaciones
           </RadioCards.Item>
-          <RadioCards.Item value="restock" style={{ fontWeight: "700" }}>Gestión de Restock</RadioCards.Item>
+          <RadioCards.Item value="restock" style={{ fontWeight: "700" }}>
+            Gestión de Restock
+          </RadioCards.Item>
         </RadioCards.Root>
       </div>
       {selectedModule === "quotes" && <QuotesModule dict={dict} />}
