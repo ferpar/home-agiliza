@@ -20,21 +20,13 @@ export default function FeatureItem({ question, answer, video, image }) {
             {video && <FeatureVideo video={video} />}
             {image && (
               <div
-                style={{
-                  marginTop: "1rem",
-                  position: "relative",
-                  minHeight: "350px",
-                }}
+                className={styles["imageWrapper"]}
               >
                 <Image
                   fill
                   src={image}
                   alt={question}
-                  style={{
-                    borderRadius: "5px",
-                    overflow: "hidden",
-                    objectFit: "cover",
-                  }}
+                  className={styles["featureImage"]}
                 />
               </div>
             )}

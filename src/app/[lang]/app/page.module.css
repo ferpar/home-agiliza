@@ -95,12 +95,24 @@
   transition: transform 0.5s;
 }
 
+.imageWrapper {
+  position: relative;
+  margin-top: 1rem;
+  min-height: 250px;
+}
+
+.featureImage {
+  border-radius: 5px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 @media (min-width: 1248px) {
   .modules {
     max-width: 75%;
   }
-  .quotesGrid {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  .imageWrapper {
+    min-height: 500px;
   }
 }
 
