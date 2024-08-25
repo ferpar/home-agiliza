@@ -1,16 +1,18 @@
-export default function App() {
+import styles from "./page.module.css";
+import Modules from "./Modules";
+import { getDictionary } from "../dictionaries";
+
+export default async function App({ params: { lang } }) {
+  const dict = await getDictionary(lang);
+
   return (
-    <main
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <h1>WIP</h1>
-      <p>This page is a work in progress.</p>
+    <main className={`${styles.mainContent} ${styles.blueBg}`}>
+      <h2 style={{marginBottom: "1rem"}}>{dict["APP_ABOUT_TITLE"]}</h2>
+      <div style={{ textAlign: "center", marginBottom: "2rem" }}>
+        <p>{dict["APP_ABOUT_INTRO_1"]}</p>
+        <p>{dict["APP_ABOUT_INTRO_2"]}</p>
+      </div>
+      <Modules dict={dict} />
     </main>
   );
 }

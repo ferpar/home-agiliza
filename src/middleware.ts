@@ -11,11 +11,11 @@ import { NextResponse } from "next/server";
 export function middleware(request) {
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl;
-  const pathnameImageFormat = pathname.match(
-    /(.*)\.(png|jpg|jpeg|webp|svg|gif)$/,
+  const pathnameImageOrVideoFormat = pathname.match(
+    /(.*)\.(png|jpg|jpeg|webp|svg|gif|mp4)$/,
   );
   // dont redirect if it's an image
-  if (pathnameImageFormat) return;
+  if (pathnameImageOrVideoFormat) return;
 
   if (
     pathname.startsWith(`/${defaultLocale}/`) ||
