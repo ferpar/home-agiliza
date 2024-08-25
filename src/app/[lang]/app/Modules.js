@@ -1,6 +1,7 @@
 "use client";
 import { RadioCards } from "@radix-ui/themes";
 import QuotesModule from "./Quotes/QuotesModule";
+import RestockModule from "./Restock/RestockModule";
 import React from "react";
 import styles from "./page.module.css";
 export default function AppModules({ dict }) {
@@ -22,6 +23,7 @@ export default function AppModules({ dict }) {
         </RadioCards.Root>
       </div>
       {selectedModule === "quotes" && <QuotesModule dict={dict} />}
+      {selectedModule === "restock" && <RestockModule dict={dict} />}
     </div>
   );
 }

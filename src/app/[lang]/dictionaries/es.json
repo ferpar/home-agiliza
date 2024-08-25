@@ -129,11 +129,16 @@
   "QUOTES_F7_Q": "¿Estás harto de tanta hoja de excel y sientes que tiene que haber “una forma mejor”?",
   "QUOTES_F7_A": "La hay, y es Agiliza Seller. Te permite saber con exactitud, que rentabilidad te dan TODOS tus proveedores para distintos PVP del producto, de un plumazo. Tanto como si tienes 3 proveedores y un producto, como si eres un vendedor establecido con 50 productos y 80 proveedores. Accesible desde cualquier terminal. Y siempre sabrás de un vistazo cual es el proveedor que te da mayor rentabilidad.",
   "QUOTES_MODULE": "Gestión de Cotizaciones",
-  "RESTOCK_MODULE": "Gestión de Reposiciones",
+  "RESTOCK_MODULE": "Gestión de Restock y Cash Flow",
   "QUOTES_MODULE_TITLE": "Módulo de Gestión de Cotizaciones",
   "QUOTES_MODULE_INTRO": "Eres un seller de Amazon, y lo que más disfrutas es pedir cotizaciones para un producto en Alibaba... ...ahhhh, que no?",
   "QUOTES_MODULE_SUBTITLE": "¿Qué es lo que pasa?",
   "APP_ABOUT_TITLE": "¿Para que sirve?",
   "APP_ABOUT_INTRO_1": "Nuestro objetivo es hacer que vendas más trabajando menos",
-  "APP_ABOUT_INTRO_2": "¿Cómo?"
+  "APP_ABOUT_INTRO_2": "¿Cómo?",
+  "RESTOCK_IN_PROGRESS": "Esto es lo que estamos cocinando...",
+  "RESTOCK_MODULE_TITLE": "Módulo de Restock",
+  "RESTOCK_MODULE_INTRO": "Nuestro sistema de gestión de Restock, que te ayudará a planificar tus compras para evitar romper stock, perder ventas y las penalizaciones de posicionamiento que te aplicará Amazon.",
+  "CASHFLOW_MODULE_TITLE": "Módulo de Cash Flow",
+  "CASHFLOW_MODULE_INTRO": "Nuestro sistema de Cashflow, con el que evitarás quedarte sin caja para pagar a tus proveedores, y podrás tener una prevision del dinero en tu cuenta para los próximos meses, ganando una tranquilidad que ahora no imaginas que pueda ser posible, porque realmente es complejo gestionar esto sin una herramienta especifica."
 }

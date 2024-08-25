@@ -129,11 +129,17 @@
   "QUOTES_F7_Q": "Are you tired of so many Excel sheets and feel like there has to be 'a better way'?",
   "QUOTES_F7_A": "There is, and it's Agiliza Seller. It allows you to know with accuracy the profitability of ALL your suppliers for different product selling prices, at a glance. Whether you have 3 suppliers and one product or you're an established seller with 50 products and 80 suppliers. Accessible from any terminal. And you'll always know at a glance which supplier gives you the highest profitability.",
   "QUOTES_MODULE": "Quote Management",
-  "RESTOCK_MODULE": "Restocking",
+  "RESTOCK_MODULE": "Restock & Cash Flow",
   "QUOTES_MODULE_TITLE": "Quotes Management Module",
   "QUOTES_MODULE_INTRO": "You’re an Amazon seller, and what you enjoy the most is requesting quotes for a product on Alibaba... ...ahhhh, not really?",
   "QUOTES_MODULE_SUBTITLE": "What’s going on?",
   "APP_ABOUT_TITLE": "What is it for?",
   "APP_ABOUT_INTRO_1": "Our goal is to help you sell more while working less",
-  "APP_ABOUT_INTRO_2": "How?"
+  "APP_ABOUT_INTRO_2": "How?",
+  "RESTOCK_IN_PROGRESS": "These are the features we are currently working on:",
+  "RESTOCK_MODULE_TITLE": "Restock Module",
+  "RESTOCK_MODULE_INTRO": "Our Restock management system will help you plan your purchases to avoid stockouts, lost sales, and the ranking penalties that Amazon applies.",
+  "CASHFLOW_MODULE_TITLE": "Cash Flow Module",
+  "CASHFLOW_MODULE_INTRO": "Our Cashflow system will help you avoid running out of cash to pay your suppliers and allow you to forecast the money in your account for the coming months, giving you peace of mind by simplifying a process that would otherwise be difficult to manage without a specialized tool."
+
 }
