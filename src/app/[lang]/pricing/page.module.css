@@ -123,6 +123,7 @@
 .base-features li {
   /* border-top: 1px solid #eee; */
   padding: 10px;
+  text-align: left;
 }
 
 .features li::before {
@@ -140,14 +141,14 @@
 }
 
 .button {
-  border: none;
   border-radius: 4px;
   padding: 10px 20px;
-  cursor: pointer;
   margin-top: auto;
   font-family: var(--font-montserrat);
   font-size: 1.5rem;
   cursor: pointer;
+  height: auto;
+  line-height: 1.6rem;
 }
 
 .button:hover {
