@@ -102,8 +102,6 @@
   .background {
     display: revert;
     flex: 4;
-    align-self: flex-end;
-    margin-right: 7rem;
     max-width: min(1570px, 75%);
   }
 
