@@ -10,7 +10,7 @@ import LogUser from "./LogUser/LogUser";
 import Image from "next/image";
 import logoImage from "./logo.svg";
 
-function Header({ path, dict }) {
+function Header({ path, dict, lang }) {
   const [scrolled, setScrolled] = React.useState(null);
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -88,6 +88,7 @@ function Header({ path, dict }) {
           actualPath={actualPath}
           handlePathChange={handlePathChange}
           dict={dict}
+          lang={lang}
         />
         <LogUser dict={dict} />
         <Hamburger
@@ -103,6 +104,7 @@ function Header({ path, dict }) {
         isOpen={isOpen}
         onClick={() => setIsOpen(false)}
         dict={dict}
+        lang={lang}
       />
     </>
   );
