@@ -140,6 +140,6 @@
   "RESTOCK_MODULE_TITLE": "Restock Module",
   "RESTOCK_MODULE_INTRO": "Our Restock management system will help you plan your purchases to avoid stockouts, lost sales, and the ranking penalties that Amazon applies.",
   "CASHFLOW_MODULE_TITLE": "Cash Flow Module",
-  "CASHFLOW_MODULE_INTRO": "Our Cashflow system will help you avoid running out of cash to pay your suppliers and allow you to forecast the money in your account for the coming months, giving you peace of mind by simplifying a process that would otherwise be difficult to manage without a specialized tool."
-
+  "CASHFLOW_MODULE_INTRO": "Our Cashflow system will help you avoid running out of cash to pay your suppliers and allow you to forecast the money in your account for the coming months, giving you peace of mind by simplifying a process that would otherwise be difficult to manage without a specialized tool.",
+  "MONTHLY_NO_VAT": "/month + VAT"
 }

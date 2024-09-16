@@ -154,12 +154,12 @@ export default function Pricing({ dict }) {
                   }
                 >
                   {plan.price}€
-                  <span className={styles.perMonth}>/mes + IVA</span>
+                  <span className={styles.perMonth}>{dict["MONTHLY_NO_VAT"]}</span>
                 </div>
               )}
               <div className={styles.price}>
                 {plan.price - plan.discount.amount}€
-                <span className={styles.perMonth}>/mes + IVA</span>
+                <span className={styles.perMonth}>{dict["MONTHLY_NO_VAT"]}</span>
               </div>
             </div>
             <div className={styles.perMonth}>

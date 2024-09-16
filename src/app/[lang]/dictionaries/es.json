@@ -140,5 +140,6 @@
   "RESTOCK_MODULE_TITLE": "Módulo de Restock",
   "RESTOCK_MODULE_INTRO": "Nuestro sistema de gestión de Restock, que te ayudará a planificar tus compras para evitar romper stock, perder ventas y las penalizaciones de posicionamiento que te aplicará Amazon.",
   "CASHFLOW_MODULE_TITLE": "Módulo de Cash Flow",
-  "CASHFLOW_MODULE_INTRO": "Nuestro sistema de Cashflow, con el que evitarás quedarte sin caja para pagar a tus proveedores, y podrás tener una prevision del dinero en tu cuenta para los próximos meses, ganando una tranquilidad que ahora no imaginas que pueda ser posible, porque realmente es complejo gestionar esto sin una herramienta especifica."
+  "CASHFLOW_MODULE_INTRO": "Nuestro sistema de Cashflow, con el que evitarás quedarte sin caja para pagar a tus proveedores, y podrás tener una prevision del dinero en tu cuenta para los próximos meses, ganando una tranquilidad que ahora no imaginas que pueda ser posible, porque realmente es complejo gestionar esto sin una herramienta especifica.",
+  "MONTHLY_NO_VAT": "/mes + IVA"
 }
