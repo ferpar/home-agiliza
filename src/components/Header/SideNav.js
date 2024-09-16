@@ -7,7 +7,8 @@ export default function SideNav({
   handlePathChange,
   isOpen,
   onClick,
-  dict
+  dict,
+  lang
 }) {
   return (
     <nav
@@ -29,7 +30,7 @@ export default function SideNav({
               actualPath === link.path ? styles["active"] : ""
             }`}
           >
-            <Link href={link.path} onClick={() => handlePathChange(link.path)}>
+            <Link href={`/${lang}${link.path}`} onClick={() => handlePathChange(link.path)}>
               {dict[link.name]}
             </Link>
           </li>

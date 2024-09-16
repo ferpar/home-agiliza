@@ -63,9 +63,9 @@ export default async function RootLayout({ children, params:{ lang } }) {
       <body>
         <NavProvider>
           <Theme>
-            <Header dict={dict}/>
+            <Header dict={dict} lang={lang}/>
             {children}
-            <Footer dict={dict}/>
+            <Footer dict={dict} lang={lang}/>
           </Theme>
         </NavProvider>
       </body>

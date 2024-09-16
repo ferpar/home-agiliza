@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./Header.module.css";
 import headerLinks from "./headerLinks";
 
-export default function TopNav({ actualPath, handlePathChange, dict }) {
+export default function TopNav({ actualPath, handlePathChange, dict, lang }) {
   return (
     <nav className={styles["top-nav"]}>
       <ul className={styles["header-nav-links"]}>
@@ -13,7 +13,7 @@ export default function TopNav({ actualPath, handlePathChange, dict }) {
               actualPath === link.path ? styles["active"] : ""
             }`}
           >
-            <Link href={link.path} onClick={() => handlePathChange(link.path)}>
+            <Link href={`/${lang}${link.path}`} onClick={() => handlePathChange(link.path)}>
               {dict[link.name]}
             </Link>
           </li>
