@@ -32,6 +32,7 @@ export default function AppModules({ dict }) {
               width={200}
               height={200}
               priority
+              placeholder="blur"
             />
           </div>
         </Card>
@@ -48,6 +49,7 @@ export default function AppModules({ dict }) {
               width={200}
               height={200}
               priority
+              placeholder="blur"
             />
           </div>
         </Card>
