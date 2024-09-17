@@ -7,8 +7,8 @@ export default async function App({ params: { lang } }) {
 
   return (
     <main className={`${styles.mainContent} ${styles.blueBg}`}>
-      <h2 style={{marginBottom: "1rem"}}>{dict["APP_ABOUT_TITLE"]}</h2>
-      <div style={{ textAlign: "center", marginBottom: "2rem" }}>
+      <h2 className={styles.subtitle}>{dict["APP_ABOUT_TITLE"]}</h2>
+      <div className={styles.intro}>
         <p>{dict["APP_ABOUT_INTRO_1"]}</p>
         <p>{dict["APP_ABOUT_INTRO_2"]}</p>
       </div>

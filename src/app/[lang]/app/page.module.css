@@ -33,6 +33,20 @@
   color: white;
 }
 
+.subtitle {
+  margin-bottom: 1rem;
+}
+
+.intro {
+  text-align: center;
+}
+
+@media (min-width: 1280px) {
+  .intro {
+    margin-bottom: 2rem;
+  }
+}
+
 .modules {
   width: 100%;
   max-width: 1200px;
