@@ -23,14 +23,14 @@ export default function AppModules({ dict }) {
           className={`${styles.moduleCard} ${selectedModule === "quotes" && styles.selected}`}
           onClick={() => handleModuleSelection("quotes")}
         >
-          <p>{dict["QUOTES_MODULE"]}</p>
+          <h3>{dict["QUOTES_MODULE"]}</h3>
         </Card>
         <Card
           variant="ghost"
           className={`${styles.moduleCard} ${selectedModule === "restock" && styles.selected}`}
           onClick={() => handleModuleSelection("restock")}
         >
-          <p>{dict["RESTOCK_MODULE"]}</p>
+          <h3>{dict["RESTOCK_MODULE"]}</h3>
         </Card>
       </div>
       {selectedModule === "quotes" && <QuotesModule dict={dict} />}
