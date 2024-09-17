@@ -10,8 +10,8 @@ export default function FeatureItem({ question, answer, video, image }) {
   const [isOpen, setIsOpen] = React.useState(false);
   const switchIsOpen = () => setIsOpen(!isOpen);
   return (
-      <li className={styles.featureItem}>
-        <div className={styles["question"]} onClick={switchIsOpen}>
+      <li className={styles.featureItem} onClick={switchIsOpen}>
+        <div className={styles["question"]} >
           <p>{question}</p>
         </div>
         {isOpen && (
@@ -38,7 +38,6 @@ export default function FeatureItem({ question, answer, video, image }) {
               ? `${styles["chevron"]} ${styles["chevronOpen"]}`
               : styles["chevron"]
           }
-          onClick={switchIsOpen}
         >
           <ChevronDownIcon height="2rem" width="2rem" />
         </div>
