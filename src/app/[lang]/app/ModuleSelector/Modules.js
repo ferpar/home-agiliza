@@ -1,5 +1,7 @@
 "use client";
 import Image from "next/image";
+import quotesImage from "../../../../../public/assets/quotes_S.jpg"; 
+import CFRImage from "../../../../../public/assets/CFRestock_S.jpg"; 
 import { Card } from "@radix-ui/themes";
 import QuotesModule from "./Quotes/QuotesModule";
 import RestockModule from "./Restock/RestockModule";
@@ -27,7 +29,7 @@ export default function AppModules({ dict }) {
           <h3>{dict["QUOTES_MODULE"]}</h3>
           <div className={styles.imgWrapper}>
             <Image
-              src="/assets/quotes_S.jpg"
+              src={quotesImage}
               alt={dict["QUOTES_MODULE"]}
               width={200}
               height={200}
@@ -44,7 +46,7 @@ export default function AppModules({ dict }) {
           <h3>{dict["RESTOCK_MODULE"]}</h3>
           <div className={styles.imgWrapper}>
             <Image
-              src="/assets/CFRestock_S.jpg"
+              src={CFRImage}
               alt={dict["QUOTES_MODULE"]}
               width={200}
               height={200}
