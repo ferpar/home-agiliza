@@ -1,0 +1,48 @@
+.modules {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.moduleGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  flex: column;
+}
+
+.moduleCard {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  padding: 1rem; 
+  border-radius: 5px;
+  margin: 0;
+  text-align: center; 
+}
+
+.moduleCard:hover {
+  background: hsl(225.31deg 54% 64%);
+}
+.moduleCard:active {
+  transform: translateY(2px);
+}
+
+.selected {
+  background: hsl(225.31deg 54% 64%);
+  border: 1px solid orange;
+}
+
+@media (min-width: 768px) {
+  .moduleGrid {
+    flex-direction: row;
+  }
+  .moduleCard {
+    flex: 1;
+  }
+}
