@@ -31,6 +31,7 @@ export default function AppModules({ dict }) {
               alt={dict["QUOTES_MODULE"]}
               width={200}
               height={200}
+              priority
             />
           </div>
         </Card>
@@ -46,6 +47,7 @@ export default function AppModules({ dict }) {
               alt={dict["QUOTES_MODULE"]}
               width={200}
               height={200}
+              priority
             />
           </div>
         </Card>
