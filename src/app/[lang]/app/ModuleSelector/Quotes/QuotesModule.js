@@ -1,4 +1,4 @@
-import styles from "../page.module.css";
+import styles from "../../page.module.css";
 import FeatureItem from "./FeatureItem";
 
 export default function QuotesModule({ dict }) {

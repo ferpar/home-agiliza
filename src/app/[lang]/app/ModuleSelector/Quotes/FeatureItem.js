@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
-import styles from "../page.module.css";
+import styles from "../../page.module.css";
 // import chevron icon form radix ui
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
-import FeatureVideo from "../FeatureVideo";
+import FeatureVideo from "../../FeatureVideo";
 
 export default function FeatureItem({ question, answer, video, image }) {
   const [isOpen, setIsOpen] = React.useState(false);

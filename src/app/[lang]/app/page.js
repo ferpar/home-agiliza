@@ -1,5 +1,5 @@
 import styles from "./page.module.css";
-import Modules from "./Modules";
+import Modules from "./ModuleSelector/Modules";
 import { getDictionary } from "../dictionaries";
 
 export default async function App({ params: { lang } }) {
