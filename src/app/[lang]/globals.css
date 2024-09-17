@@ -110,7 +110,7 @@ h3 {
 p {
   transition: font-size 0.2s ease-in-out;
   font-size: var(--font-size-m);
-  font-family: var(--font-montserrat), serif;
+  font-family: var(--font-montserrat), sans-serif;
 }
 
 h1 {

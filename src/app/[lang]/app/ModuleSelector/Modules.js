@@ -18,7 +18,7 @@ export default function AppModules({ dict }) {
 
   return (
     <div className={styles.modules}>
-      <div className={styles.moduleGrid}>
+      <div className={`${styles.moduleGrid} ${selectedModule === null && styles.unselected}`}>
         <Card
           variant="ghost"
           className={`${styles.moduleCard} ${selectedModule === "quotes" && styles.selected}`}
